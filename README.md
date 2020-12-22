@@ -14,4 +14,4 @@ To create a universal JSON export file for Hero Designer to be used across multi
 2. I included the HD export file I tuned up for import into FoundryVTT. I think we can merge this into a universal export format that works for all parties.
 3. To make JSON params unique, you have to "name" a compound power. Otherwise, there is collision of param names.
 
-Just ping me here on Github if you want access to participate.
+Just email me at trechriron at that google place with your username and I'll add you!
