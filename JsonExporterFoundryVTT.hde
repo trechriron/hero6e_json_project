@@ -1,5 +1,13 @@
 <!--TEMPLATE_NAME-->6e JSON export for foundryVTT<!--/TEMPLATE_NAME--><!--TEMPLATE_DESCRIPTION--><p>6e JSON exporter for foundryVTT - (from Brenell's awesome work!)r</p><p>Version 1.0  DEC 2020</p><p>JSON Data dump for ingestion into FoundryVTT</p><!--/TEMPLATE_DESCRIPTION--><!--FILE_EXTENSION-->json<!--/FILE_EXTENSION-->
         {
+        "export_info": {
+        "appversion": "<!--APP_VERSION-->",
+        "exportid": "<!--EXPORT_ID-->",
+        "name": "<!--CHARACTER_NAME-->",
+        "playername": "<!--PLAYER_NAME-->",
+        "version": 3.0,
+        "edition": 6
+        },
         "description": {
         "name": "<!--CHARACTER_NAME-->",
         "height_metric": "<!--HEIGHT_METRIC-->",
@@ -32,56 +40,100 @@
         "strength": {
         <!--STR-->
         "shortname": "STR",
+        "primary": {
         "value": "<!--PRIMARY-->",
+        "roll": "<!--PRIMARY_ROLL-->-"
+        },
+        "secondary": {
+        "value": "<!--SECONDARY-->",
+        "roll": "<!--SECONDARY_ROLL-->-"
+        },
         "cost": "<!--STR_COST-->",
         "roll": "<!--STR_ROLL-->",
         "damage": "<!--STR_DICE-->",
         "lift_kg": "<!--STR_LIFT-->",
-        "end_cost": "<!--STR_END-->"
+        "end_cost": "<!--STR_END-->",
+        "notes": "<!--NOTES-->"
         },
         <!--/STR-->
         "dexterity": {
         <!--DEX-->
         "shortname": "DEX",
+        "primary": {
         "value": "<!--PRIMARY-->",
+        "roll": "<!--PRIMARY_ROLL-->-"
+        },
+        "secondary": {
+        "value": "<!--SECONDARY-->",
+        "roll": "<!--SECONDARY_ROLL-->-"
+        },
         "cost": "<!--DEX_COST-->",
-        "roll": "<!--DEX_ROLL-->"
+        "notes": "<!--NOTES-->"
         },
         <!--/DEX-->
         "constitution": {
         <!--CON-->
         "shortname": "CON",
+        "primary": {
         "value": "<!--PRIMARY-->",
+        "roll": "<!--PRIMARY_ROLL-->-"
+        },
+        "secondary": {
+        "value": "<!--SECONDARY-->",
+        "roll": "<!--SECONDARY_ROLL-->-"
+        },
         "cost": "<!--CON_COST-->",
-        "roll": "<!--CON_ROLL-->"
+        "notes": "<!--NOTES-->"
         },
         <!--/CON-->
         "intelligence": {
         <!--INT-->
         "shortname": "INT",
+        "primary": {
         "value": "<!--PRIMARY-->",
+        "roll": "<!--PRIMARY_ROLL-->-"
+        },
+        "secondary": {
+        "value": "<!--SECONDARY-->",
+        "roll": "<!--SECONDARY_ROLL-->-"
+        },
         "cost": "<!--INT_COST-->",
-        "roll": "<!--INT_ROLL-->",
+        "notes": "<!--NOTES-->",
         "perception": {
         "shortname": "PER",
-        "roll": " <!--PER_ROLL-->"
+        "roll": " <!--PER_ROLL-->",
+        "notes": "<!--NOTES-->"
         }
         },
         <!--/INT-->
         "ego": {
         <!--EGO-->
         "shortname": "EGO",
+        "primary": {
         "value": "<!--PRIMARY-->",
+        "roll": "<!--PRIMARY_ROLL-->-"
+        },
+        "secondary": {
+        "value": "<!--SECONDARY-->",
+        "roll": "<!--SECONDARY_ROLL-->-"
+        },
         "cost": "<!--EGO_COST-->",
-        "roll": "<!--EGO_ROLL-->"
+        "notes": "<!--NOTES-->"
         },
         <!--/EGO-->
         "presence": {
         <!--PRE-->
         "shortname": "PRE",
+        "primary": {
         "value": "<!--PRIMARY-->",
+        "roll": "<!--PRIMARY_ROLL-->-"
+        },
+        "secondary": {
+        "value": "<!--SECONDARY-->",
+        "roll": "<!--SECONDARY_ROLL-->-"
+        },
         "cost": "<!--PRE_COST-->",
-        "roll": "<!--PRE_ROLL-->",
+        "notes": "<!--NOTES-->",
         "attack": "<!--PRE_DICE-->"
         }
         <!--/PRE-->
@@ -90,83 +142,131 @@
         "offensive_combat_value": {
         <!--OCV_CHAR-->
         "shortname": "OCV",
-        "value": "<!--PRIMARY-->",
-        "cost": "<!--OCV_CHAR_COST-->"
+        "primary": {
+        "value": "<!--PRIMARY-->"
+        },
+        "secondary": {
+        "value": "<!--SECONDARY-->"
+        },
+        "cost": "<!--OCV_CHAR_COST-->",
+        "notes": "<!--NOTES-->"
         },
         <!--/OCV_CHAR-->
         "defensive_combat_value": {
         <!--DCV_CHAR-->
         "shortname": "DCV",
-        "value": "<!--PRIMARY-->",
-        "cost": "<!--DCV_CHAR_COST-->"
+        "primary": {
+        "value": "<!--PRIMARY-->"
+        },
+        "secondary": {
+        "value": "<!--SECONDARY-->"
+        },
+        "cost": "<!--DCV_CHAR_COST-->",
+        "notes": "<!--NOTES-->"
         },
         <!--/DCV_CHAR-->
         "offensive_mental_combat_value": {
         <!--OMCV-->
         "shortname": "OMCV",
-        "value": "<!--PRIMARY-->",
-        "cost": "<!--OMCV_COST-->"
+        "primary": {
+        "value": "<!--PRIMARY-->"
+        },
+        "secondary": {
+        "value": "<!--SECONDARY-->"
+        },
+        "cost": "<!--OMCV_COST-->",
+        "notes": "<!--NOTES-->"
         },
         <!--/OMCV-->
         "defensive_mental_combat_value": {
         <!--DMCV-->
         "shortname": "DMCV",
-        "value": "<!--PRIMARY-->",
-        "cost": "<!--DMCV_COST-->"
+        "primary": {
+        "value": "<!--PRIMARY-->"
+        },
+        "secondary": {
+        "value": "<!--SECONDARY-->"
+        },
+        "cost": "<!--DMCV_COST-->",
+        "notes": "<!--NOTES-->"
         },
         <!--/DMCV-->
         "offensive_social_combat_value": {
         "shortname": "OSCV",
-        "value": "",
-        "cost": ""
+        "primary": {
+        "value": ""
+        },
+        "secondary": {
+        "value": ""
+        },
+        "cost": "",
+        "notes": ""
         },
         "defensive_social_combat_value": {
         "shortname": "DSCV",
-        "value": "",
-        "cost": ""
+        "primary": {
+        "value": ""
+        },
+        "secondary": {
+        "value": ""
+        },
+        "cost": "",
+        "notes": ""
         },
         "speed": {
         <!--SPD-->
         "shortname": "SPD",
-        "value": "<!--PRIMARY-->",
+        "primary": {
+        "value": "<!--PRIMARY-->"
+        },
+        "secondary": {
+        "value": "<!--SECONDARY-->"
+        },
         "cost": "<!--SPD_COST-->",
-        "phases": "<!--SPD_NOTES-->"
+        "phases": "<!--SPD_NOTES-->",
+        "notes": "<!--NOTES-->"
         },
         <!--/SPD-->
         "lightning_reflexes": {
         <!--LIGHTNING_REFLEXES-->
         "levels": "<!--LEVELS-->",
         "text": "<!--TEXT-->",
+        "notes": "<!--NOTES-->"
         <!--/LIGHTNING_REFLEXES-->
         },
         "physical_defense": {
         <!--PD-->
         "shortname": "PD",
         "value": "<!--PD_NONRESISTANT_TOTAL-->",
-        "cost": "<!--PD_COST-->"
+        "cost": "<!--PD_COST-->",
+        "notes": "<!--NOTES-->"
         },
         "physical_defense_resistant": {
         "shortname": "rPD",
         "value": "<!--PD_RESISTANT_TOTAL-->",
-        "cost": "<!--MATH-->3 * (<!--PD_RESISTANT_TOTAL-->/2)<!--/MATH-->"
+        "cost": "<!--MATH-->3 * (<!--PD_RESISTANT_TOTAL-->/2)<!--/MATH-->",
+        "notes": "<!--NOTES-->"
         },
         <!--/PD-->
         "energy_defense": {
         <!--ED-->
         "shortname": "ED",
         "value": "<!--ED_NONRESISTANT_TOTAL-->",
-        "cost": "<!--ED_COST-->"
+        "cost": "<!--ED_COST-->",
+        "notes": "<!--NOTES-->"
         },
         "energy_defense_resistant": {
         "shortname": "rED",
         "value": "<!--ED_RESISTANT_TOTAL-->",
-        "cost": "<!--MATH-->3 * (<!--ED_RESISTANT_TOTAL-->/2)<!--/MATH-->"
+        "cost": "<!--MATH-->3 * (<!--ED_RESISTANT_TOTAL-->/2)<!--/MATH-->",
+        "notes": "<!--NOTES-->"
         },
         <!--/ED-->
         "social_defense": {
         "shortname": "SD",
         "value": "",
-        "cost": ""
+        "cost": "",
+        "notes": ""
         }
         },
         "martial_arts": {
@@ -185,39 +285,45 @@
         <!--REC-->
         "shortname": "REC",
         "value": "<!--PRIMARY-->",
-        "cost": "<!--REC_COST-->"
+        "cost": "<!--REC_COST-->",
+        "notes": "<!--NOTES-->"
         },
         <!--/REC-->
         "savoir_faire": {
         "shortname": "SF",
         "value": "",
-        "cost": ""
+        "cost": "",
+        "notes": ""
         },
         "endurance": {
         <!--END-->
         "shortname": "END",
         "value": "<!--PRIMARY-->",
-        "cost": "<!--END_COST-->"
+        "cost": "<!--END_COST-->",
+        "notes": "<!--NOTES-->"
         },
         <!--/END-->
         "body": {
         <!--BODY-->
         "shortname": "BODY",
         "value": "<!--PRIMARY-->",
-        "cost": "<!--BODY_COST-->"
+        "cost": "<!--BODY_COST-->",
+        "notes": "<!--NOTES-->"
         },
         <!--/BODY-->
         "stun": {
         <!--STUN-->
         "shortname": "STUN",
         "value": "<!--PRIMARY-->",
-        "cost": "<!--STUN_COST-->"
+        "cost": "<!--STUN_COST-->",
+        "notes": "<!--NOTES-->"
         },
         <!--/STUN-->
         "composure": {
         "shortname": "COMP",
         "value": "",
-        "cost": ""
+        "cost": "",
+        "notes": ""
         }
         },
         "movement": {
@@ -270,7 +376,8 @@
         "non-combat": {
         "value_2x": "<!--MATH--><!--LEVELS--> * 2<!--/MATH-->",
         "value_4x": "<!--MATH--><!--LEVELS--> * 4<!--/MATH-->"
-        }
+        },
+        "notes": "<!--NOTES-->"
         },
         <!--/IF_MOVEMENT--><!--/POWERS-->
         },
@@ -552,6 +659,8 @@
         "total": "<!--TOTAL_POINTS-->"
         }
         }
+
+<!--REG_REPLACE--><!--REGSTRING-->3/4<!--/REGSTRING--><!--REPSTRING-->¾<!--/REPSTRING--><!--/REG_REPLACE-->
 <!--REG_REPLACE--><!--REGSTRING-->1/2<!--/REGSTRING--><!--REPSTRING-->½<!--/REPSTRING--><!--/REG_REPLACE-->
 <!--REG_REPLACE--><!--REGSTRING-->1/4<!--/REGSTRING--><!--REPSTRING-->¼<!--/REPSTRING--><!--/REG_REPLACE-->
 <!--REG_REPLACE--><!--REGSTRING-->(\d)("")<!--/REGSTRING--><!--REPSTRING-->$1*"<!--/REPSTRING--><!--/REG_REPLACE-->
