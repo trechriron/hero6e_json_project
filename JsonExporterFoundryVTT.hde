@@ -1,0 +1,567 @@
+<!--TEMPLATE_NAME-->6e JSON export for foundryVTT<!--/TEMPLATE_NAME--><!--TEMPLATE_DESCRIPTION--><p>6e JSON exporter for foundryVTT - (from Brenell's awesome work!)r</p><p>Version 1.0  DEC 2020</p><p>JSON Data dump for ingestion into FoundryVTT</p><!--/TEMPLATE_DESCRIPTION--><!--FILE_EXTENSION-->json<!--/FILE_EXTENSION-->
+        {
+        "description": {
+        "name": "<!--CHARACTER_NAME-->",
+        "height_metric": "<!--HEIGHT_METRIC-->",
+        "height_imperial": "<!--HEIGHT_ENGLISH-->",
+        "weight_metric": "<!--WEIGHT_METRIC-->",
+        "weight_imperial": "<!--WEIGHT_ENGLISH-->",
+        "hair": "<!--HAIR_COLOR-->",
+        "eyes": "<!--EYE_COLOR-->"
+        },
+        "info": {
+        "appearance": "<!--APPEARANCE--><!--/APPEARANCE-->",
+        "personality": "<!--PERSONALITY--><!--/PERSONALITY-->",
+        "quote": "<!--QUOTE--><!--/QUOTE-->",
+        "background": "<!--BACKGROUND--><!--/BACKGROUND-->",
+        "tactics": "<!--TACTICS--><!--/TACTICS-->",
+        "campaign_use": "<!--CAMPAIGN_USE--><!--/CAMPAIGN_USE-->"
+        },
+        "complications": {
+        <!--IFDISADS--><!--DISADS-->
+        "<!--DISPLAY-->": {
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "text": "<!--TEXT-->",
+        "notes": "<!--NOTES-->",
+        "options": "<!--OPTION-->",
+        "cost": "<!--COST-->"
+        },
+        <!--/DISADS--><!--/IFDISADS-->
+        },
+        "characteristics": {
+        "strength": {
+        <!--STR-->
+        "shortname": "STR",
+        "value": "<!--PRIMARY-->",
+        "cost": "<!--STR_COST-->",
+        "roll": "<!--STR_ROLL-->",
+        "damage": "<!--STR_DICE-->",
+        "lift_kg": "<!--STR_LIFT-->",
+        "end_cost": "<!--STR_END-->"
+        },
+        <!--/STR-->
+        "dexterity": {
+        <!--DEX-->
+        "shortname": "DEX",
+        "value": "<!--PRIMARY-->",
+        "cost": "<!--DEX_COST-->",
+        "roll": "<!--DEX_ROLL-->"
+        },
+        <!--/DEX-->
+        "constitution": {
+        <!--CON-->
+        "shortname": "CON",
+        "value": "<!--PRIMARY-->",
+        "cost": "<!--CON_COST-->",
+        "roll": "<!--CON_ROLL-->"
+        },
+        <!--/CON-->
+        "intelligence": {
+        <!--INT-->
+        "shortname": "INT",
+        "value": "<!--PRIMARY-->",
+        "cost": "<!--INT_COST-->",
+        "roll": "<!--INT_ROLL-->",
+        "perception": {
+        "shortname": "PER",
+        "roll": " <!--PER_ROLL-->"
+        }
+        },
+        <!--/INT-->
+        "ego": {
+        <!--EGO-->
+        "shortname": "EGO",
+        "value": "<!--PRIMARY-->",
+        "cost": "<!--EGO_COST-->",
+        "roll": "<!--EGO_ROLL-->"
+        },
+        <!--/EGO-->
+        "presence": {
+        <!--PRE-->
+        "shortname": "PRE",
+        "value": "<!--PRIMARY-->",
+        "cost": "<!--PRE_COST-->",
+        "roll": "<!--PRE_ROLL-->",
+        "attack": "<!--PRE_DICE-->"
+        }
+        <!--/PRE-->
+        },
+        "combat": {
+        "offensive_combat_value": {
+        <!--OCV_CHAR-->
+        "shortname": "OCV",
+        "value": "<!--PRIMARY-->",
+        "cost": "<!--OCV_CHAR_COST-->"
+        },
+        <!--/OCV_CHAR-->
+        "defensive_combat_value": {
+        <!--DCV_CHAR-->
+        "shortname": "DCV",
+        "value": "<!--PRIMARY-->",
+        "cost": "<!--DCV_CHAR_COST-->"
+        },
+        <!--/DCV_CHAR-->
+        "offensive_mental_combat_value": {
+        <!--OMCV-->
+        "shortname": "OMCV",
+        "value": "<!--PRIMARY-->",
+        "cost": "<!--OMCV_COST-->"
+        },
+        <!--/OMCV-->
+        "defensive_mental_combat_value": {
+        <!--DMCV-->
+        "shortname": "DMCV",
+        "value": "<!--PRIMARY-->",
+        "cost": "<!--DMCV_COST-->"
+        },
+        <!--/DMCV-->
+        "offensive_social_combat_value": {
+        "shortname": "OSCV",
+        "value": "",
+        "cost": ""
+        },
+        "defensive_social_combat_value": {
+        "shortname": "DSCV",
+        "value": "",
+        "cost": ""
+        },
+        "speed": {
+        <!--SPD-->
+        "shortname": "SPD",
+        "value": "<!--PRIMARY-->",
+        "cost": "<!--SPD_COST-->",
+        "phases": "<!--SPD_NOTES-->"
+        },
+        <!--/SPD-->
+        "lightning_reflexes": {
+        <!--LIGHTNING_REFLEXES-->
+        "levels": "<!--LEVELS-->",
+        "text": "<!--TEXT-->",
+        <!--/LIGHTNING_REFLEXES-->
+        },
+        "physical_defense": {
+        <!--PD-->
+        "shortname": "PD",
+        "value": "<!--PD_NONRESISTANT_TOTAL-->",
+        "cost": "<!--PD_COST-->"
+        },
+        "physical_defense_resistant": {
+        "shortname": "rPD",
+        "value": "<!--PD_RESISTANT_TOTAL-->",
+        "cost": "<!--MATH-->3 * (<!--PD_RESISTANT_TOTAL-->/2)<!--/MATH-->"
+        },
+        <!--/PD-->
+        "energy_defense": {
+        <!--ED-->
+        "shortname": "ED",
+        "value": "<!--ED_NONRESISTANT_TOTAL-->",
+        "cost": "<!--ED_COST-->"
+        },
+        "energy_defense_resistant": {
+        "shortname": "rED",
+        "value": "<!--ED_RESISTANT_TOTAL-->",
+        "cost": "<!--MATH-->3 * (<!--ED_RESISTANT_TOTAL-->/2)<!--/MATH-->"
+        },
+        <!--/ED-->
+        "social_defense": {
+        "shortname": "SD",
+        "value": "",
+        "cost": ""
+        }
+        },
+        "martial_arts": {
+        <!--MARTIAL_ARTS--><!--IF_MANEUVER-->
+        "<!--MANEUVER_NAME-->": {
+        "phase": "<!--MANEUVER_PHASE-->",
+        "ocv": "<!--MANEUVER_OCV-->",
+        "dcv": "<!--MANEUVER_DCV-->",
+        "effect": "<!--MANEUVER_EFFECT-->",
+        "notes": "<!--MA_NOTES-->"
+        },
+        <!--/IF_MANEUVER--><!--/MARTIAL_ARTS-->
+        },
+        "vitals": {
+        "recovery": {
+        <!--REC-->
+        "shortname": "REC",
+        "value": "<!--PRIMARY-->",
+        "cost": "<!--REC_COST-->"
+        },
+        <!--/REC-->
+        "savoir_faire": {
+        "shortname": "SF",
+        "value": "",
+        "cost": ""
+        },
+        "endurance": {
+        <!--END-->
+        "shortname": "END",
+        "value": "<!--PRIMARY-->",
+        "cost": "<!--END_COST-->"
+        },
+        <!--/END-->
+        "body": {
+        <!--BODY-->
+        "shortname": "BODY",
+        "value": "<!--PRIMARY-->",
+        "cost": "<!--BODY_COST-->"
+        },
+        <!--/BODY-->
+        "stun": {
+        <!--STUN-->
+        "shortname": "STUN",
+        "value": "<!--PRIMARY-->",
+        "cost": "<!--STUN_COST-->"
+        },
+        <!--/STUN-->
+        "composure": {
+        "shortname": "COMP",
+        "value": "",
+        "cost": ""
+        }
+        },
+        "movement": {
+        "running": {
+        <!--IF_RUNNING--><!--RUNNING-->
+        "shortname": "run",
+        "primary_value": "<!--RUNNING_PRIMARY_NUMBER-->",
+        "primary_value_noncom": "<!--RUNNING_PRIMARY_NONCOMBAT_NUMBER-->",
+        "secondary_value": "<!--RUNNING_SECONDARY_NUMBER-->",
+        "secondary_value_noncom": "<!--RUNNING_SECONDARY_NONCOMBAT_NUMBER-->",
+        "end_cost": "<!--RUNNING_NOTES-->",
+        "cost": "<!--RUNNING_COST-->"
+        <!--/RUNNING--><!--/IF_RUNNING-->
+        },
+        "swimming": {
+        <!--IF_SWIMMING--><!--SWIMMING-->
+        "shortname": "swim",
+        "primary_value": "<!--SWIMMING_PRIMARY_NUMBER-->",
+        "primary_value_noncom": "<!--SWIMMING_PRIMARY_NONCOMBAT_NUMBER-->",
+        "secondary_value": "<!--SWIMMING_SECONDARY_NUMBER-->",
+        "secondary_value_noncom": "<!--SWIMMING_SECONDARY_NONCOMBAT_NUMBER-->",
+        "end_cost": "<!--SWIMMING_NOTES-->",
+        "cost": "<!--SWIMMING_COST-->"
+        <!--/SWIMMING--><!--/IF_SWIMMING-->
+        },
+        "leaping": {
+        <!--LEAPING-->
+        "horizontal": {
+        "shortname": "h.leap",
+        "value": "<!--LEAPING_PRIMARY_NUMBER-->",
+        "cost": "<!--LEAPING_COST-->"
+        },
+        "vertical": {
+        "shortname": "v.leap",
+        "value": "<!--MATH--><!--LEAPING_PRIMARY_NUMBER-->/2<!--/MATH-->"
+        }
+        <!--/LEAPING-->
+        }
+        },
+        "movement_other": {
+        <!--POWERS--><!--IF_MOVEMENT-->
+        "<!--DISPLAY-->": {
+        "combat": {
+        "value": "<!--LEVELS-->",
+        "real_cost": "<!--COST-->",
+        "active_cost": "<!--ACTIVE_COST-->",
+        "text": "<!--TEXT-->",
+        "option": "<!--OPTION-->"
+        },
+        "non-combat": {
+        "value_2x": "<!--MATH--><!--LEVELS--> * 2<!--/MATH-->",
+        "value_4x": "<!--MATH--><!--LEVELS--> * 4<!--/MATH-->"
+        }
+        },
+        <!--/IF_MOVEMENT--><!--/POWERS-->
+        },
+        "perks": {
+        <!--IFPERKS--><!--PERKS-->
+        <!--IS_NOT_SEPARATOR-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--ALIAS--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "alias": "<!--ALIAS-->",
+        "roll": "<!--PERK_ROLL-->",
+        "text": "<!--TEXT-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "cost": "<!--COST-->",
+        "sfx": "<!--SFX-->",
+        "adders": {
+        <!--ADDERS-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--ALIAS--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "alias": "<!--ALIAS-->",
+        "input": "<!--INPUT-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "sfx": "<!--SFX-->",
+        "cost": "<!--COST-->"
+        },
+        <!--/ADDERS-->
+        }
+        },
+        <!--/IS_NOT_SEPARATOR--><!--/PERKS--><!--/IFPERKS-->
+        },
+        "talents": {
+        <!--IFTALENTS--><!--TALENTS-->
+        <!--IS_NOT_SEPARATOR-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--ALIAS--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "alias": "<!--ALIAS-->",
+        "roll": "<!--TALENT_ROLL-->",
+        "text": "<!--TEXT-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "cost": "<!--COST-->",
+        "sfx": "<!--SFX-->",
+        "adders": {
+        <!--ADDERS-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--ALIAS--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "alias": "<!--ALIAS-->",
+        "input": "<!--INPUT-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "sfx": "<!--SFX-->",
+        "cost": "<!--COST-->"
+        },
+        <!--/ADDERS-->
+        }
+        },
+        <!--/IS_NOT_SEPARATOR--><!--/TALENTS--><!--/IFTALENTS-->
+        },
+        "skills": {
+        <!--IFSKILLS--><!--SKILLS-->
+        <!--IS_NOT_SEPARATOR-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--ALIAS--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        <!--IS_ENHANCER-->
+        "is_enhancer": true,
+        <!--/IS_ENHANCER-->
+        <!--IS_EVERYMAN-->
+        "is_everyman": true,
+        <!--/IS_EVERYMAN-->
+        "alias": "<!--ALIAS-->",
+        "display": "<!--DISPLAY-->",
+        "input": "<!--INPUT-->",
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "roll": "<!--SKILL_ROLL-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "cost": "<!--COST-->",
+        "sfx": "<!--SFX-->",
+        "adders": {
+        <!--ADDERS-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--ALIAS--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "alias": "<!--ALIAS-->",
+        "input": "<!--INPUT-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "sfx": "<!--SFX-->",
+        "cost": "<!--COST-->"
+        },
+        <!--/ADDERS-->
+        }
+        },
+        <!--/IS_NOT_SEPARATOR--><!--/SKILLS--><!--/IFSKILLS-->
+        },
+        "powers": {
+        <!--IFPOWERS--><!--POWERS--><!--IS_NOT_SEPARATOR-->
+        <!--IF_NOT_COMPOUND_POWER-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--IS_NOT_LIST--><!--DISPLAY--><!--/IS_NOT_LIST--><!--IS_LIST--><!--ALIAS--><!--/IS_LIST--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        <!--IS_MP-->
+        "is_mpp": true,
+        <!--/IS_MP-->
+        <!--IS_VPP-->
+        "is_vpp": true,
+        <!--/IS_VPP-->
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "alias": "<!--ALIAS-->",
+        "input": "<!--INPUT-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "sfx": "<!--SFX-->",
+        "range": "<!--POWER_RANGE-->",
+        "damage": "<!--POWER_DMG-->",
+        "end": "<!--POWER_END-->",
+        "real_cost": "<!--COST-->",
+        "active_cost": "<!--ACTIVE_COST-->",
+        "adders": {
+        <!--ADDERS-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--ALIAS--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "alias": "<!--ALIAS-->",
+        "input": "<!--INPUT-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "sfx": "<!--SFX-->",
+        "cost": "<!--COST-->"
+        },
+        <!--/ADDERS-->
+        },
+        "modifiers": {
+        <!--MODIFIERS-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--ALIAS--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        "mod_value": "<!--MODIFIER_VALUE-->",
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "alias": "<!--ALIAS-->",
+        "input": "<!--INPUT-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "sfx": "<!--SFX-->"
+        },
+        <!--/MODIFIERS-->
+        }
+        },
+        <!--/IF_NOT_COMPOUND_POWER-->
+        <!--IF_COMPOUND_POWER-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--DISPLAY--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        <!--COMPONENT_POWERS-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--DISPLAY--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "alias": "<!--ALIAS-->",
+        "input": "<!--INPUT-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "sfx": "<!--SFX-->",
+        "range": "<!--POWER_RANGE-->",
+        "damage": "<!--POWER_DMG-->",
+        "end": "<!--POWER_END-->",
+        "real_cost": "<!--COST-->",
+        "active_cost": "<!--ACTIVE_COST-->",
+        "adders": {
+        <!--ADDERS-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--ALIAS--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "alias": "<!--ALIAS-->",
+        "input": "<!--INPUT-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "sfx": "<!--SFX-->",
+        "cost": "<!--COST-->"
+        },
+        <!--/ADDERS-->
+        },
+        "modifiers": {
+        <!--MODIFIERS-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--ALIAS--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        "mod_value": "<!--MODIFIER_VALUE-->",
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "alias": "<!--ALIAS-->",
+        "input": "<!--INPUT-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "sfx": "<!--SFX-->"
+        },
+        <!--/MODIFIERS-->
+        }
+        },
+        <!--/COMPONENT_POWERS-->
+        },
+        <!--/IF_COMPOUND_POWER--><!--/IS_NOT_SEPARATOR--><!--/POWERS--><!--/IFPOWERS-->
+        },
+        "equipment": {
+        <!--IFEQUIPMENT--><!--EQUIPMENT-->
+        <!--IS_NOT_SEPARATOR-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--DISPLAY--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "alias": "<!--ALIAS-->",
+        "input": "<!--INPUT-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "sfx": "<!--SFX-->",
+        "stats": {
+        "range": "<!--EQUIPMENT_RANGE-->",
+        "damage": "<!--EQUIPMENT_DMG-->",
+        "weight": "<!--EQUIPMENT_WEIGHT-->",
+        "end": "<!--EQUIPMENT_END-->",
+        "value": "<!--EQUIPMENT_VALUE-->"
+        },
+        "real_cost": "<!--COST-->",
+        "active_cost": "<!--ACTIVE_COST-->",
+        "adders": {
+        <!--ADDERS-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--ALIAS--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "alias": "<!--ALIAS-->",
+        "input": "<!--INPUT-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "sfx": "<!--SFX-->",
+        "cost": "<!--COST-->"
+        },
+        <!--/ADDERS-->
+        },
+        "modifiers": {
+        <!--MODIFIERS-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--ALIAS--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        "mod_value": "<!--MODIFIER_VALUE-->",
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "input": "<!--INPUT-->",
+        "alias": "<!--ALIAS-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "sfx": "<!--SFX-->"
+        },
+        <!--/MODIFIERS-->
+        }
+        },
+        <!--/IS_NOT_SEPARATOR--><!--/EQUIPMENT--><!--/IFEQUIPMENT-->
+        },
+        "points": {
+        "base": "<!--BASE_POINTS-->",
+        "comp_points_required": "<!--DISAD_POINTS_ALLOWED-->",
+        "characteristics": "<!--CHARACTERISTIC_POINTS-->",
+        "powers": "<!--POWER_POINTS-->",
+        "martial_arts": "<!--MARTIAL_ART_POINTS-->",
+        "skills": "<!--SKILL_POINTS-->",
+        "perks": "<!--PERK_POINTS-->",
+        "talents": "<!--TALENT_POINTS-->",
+        "experienced_earned": "<!--EARNED_EXP-->",
+        "experience_unspent": "<!--UNSPENT_EXP-->",
+        "experience_spent": "<!--SPENT_EXP-->",
+        "total": "<!--TOTAL_POINTS-->"
+        }
+        }
+<!--REG_REPLACE--><!--REGSTRING-->1/2<!--/REGSTRING--><!--REPSTRING-->½<!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REG_REPLACE--><!--REGSTRING-->1/4<!--/REGSTRING--><!--REPSTRING-->¼<!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REG_REPLACE--><!--REGSTRING-->(\d)("")<!--/REGSTRING--><!--REPSTRING-->$1*"<!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REG_REPLACE--><!--REGSTRING-->("END\s\[(\d)\]")<!--/REGSTRING--><!--REPSTRING-->"$2"<!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REG_REPLACE--><!--REGSTRING-->(\skg|\.\dkg)<!--/REGSTRING--><!--REPSTRING--><!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REG_REPLACE--><!--REGSTRING-->(\slbs)<!--/REGSTRING--><!--REPSTRING--><!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REG_REPLACE--><!--REGSTRING-->\d(\sm)"<!--/REGSTRING--><!--REPSTRING-->"<!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REG_REPLACE--><!--REGSTRING-->("\d)'\s<!--/REGSTRING--><!--REPSTRING-->$1*<!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REG_REPLACE--><!--REGSTRING-->(")(Phases:\s\s)<!--/REGSTRING--><!--REPSTRING-->$1<!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REG_REPLACE--><!--REGSTRING-->(")Lightning\sReflexes\s\((.*)\)(")<!--/REGSTRING--><!--REPSTRING-->$1$2$3<!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REG_REPLACE--><!--REGSTRING-->(\s\(\d{1,}\sActive\sPoints\))<!--/REGSTRING--><!--REPSTRING--><!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REG_REPLACE--><!--REGSTRING-->(\sReal\sCost:\s\d{1,})<!--/REGSTRING--><!--REPSTRING--><!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REG_REPLACE--><!--REGSTRING-->(<html>|<\/html>)<!--/REGSTRING--><!--REPSTRING--><!--/REPSTRING--><!--/REG_REPLACE-->
