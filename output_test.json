@@ -1,0 +1,3667 @@
+{
+  "export_info": {
+    "appversion": "20190826",
+    "exportid": "20201223003424",
+    "version": 1.0,
+    "edition": 6
+  },
+  "description": {
+    "name": "Djinn, Powerful",
+    "playername": "",
+    "height_metric": "2.0",
+    "height_imperial": "6*7*",
+    "weight_metric": "99.79",
+    "weight_imperial": "220",
+    "hair": "Brown",
+    "eyes": "Brown"
+  },
+  "info": {
+    "appearance": "Curabitur quis aliquam dui. Praesent tincidunt augue vitae dui feugiat ultricies convallis quis nisi. Nulla dapibus felis lectus, sed rhoncus tellus vestibulum ut. Nullam nec luctus orci, id tempor sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla lobortis convallis turpis non egestas. Etiam eget lacus sit amet sapien mattis semper. Vestibulum et fermentum tortor.",
+    "personality": "Phasellus quis blandit nunc, at fringilla augue. Nullam convallis sit amet nunc in semper. Praesent tristique nec augue eget posuere. Quisque auctor fermentum massa, ac feugiat urna tristique ut. Proin sed lacus eros. Sed sed libero consequat, volutpat lectus sed, varius ipsum. Aliquam ligula sapien, elementum nec pulvinar sed, finibus aliquet ex. Suspendisse ultrices vestibulum tortor non lacinia. Pellentesque pharetra scelerisque nisi imperdiet ultrices. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque accumsan justo massa, sit amet venenatis leo varius vel. Curabitur placerat gravida pellentesque.",
+    "quote": "I like people but Dragons are more fun!",
+    "background": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur metus arcu, rutrum in vestibulum sit amet, mollis sed felis. Mauris tincidunt risus tincidunt risus pellentesque, ac mattis lacus maximus. Sed porttitor dolor a commodo aliquam. Fusce egestas tellus at libero sodales, non pretium enim ullamcorper. Integer faucibus sit amet nulla vitae accumsan. Donec et feugiat nisl, vel condimentum enim. Quisque fringilla sed nisi at faucibus. Cras justo sem, condimentum at feugiat a, fermentum sit amet mi.Phasellus quis blandit nunc, at fringilla augue. Nullam convallis sit amet nunc in semper. Praesent tristique nec augue eget posuere. Quisque auctor fermentum massa, ac feugiat urna tristique ut. Proin sed lacus eros. Sed sed libero consequat, volutpat lectus sed, varius ipsum. Aliquam ligula sapien, elementum nec pulvinar sed, finibus aliquet ex. Suspendisse ultrices vestibulum tortor non lacinia. Pellentesque pharetra scelerisque nisi imperdiet ultrices. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque accumsan justo massa, sit amet venenatis leo varius vel. Curabitur placerat gravida pellentesque.",
+    "tactics": "Morbi nec erat euismod, fringilla ante nec, interdum orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent suscipit laoreet enim, sed dictum lacus ultrices cursus. Cras vitae pellentesque nisi. Integer vulputate turpis lorem, sed porttitor leo cursus ac. Vivamus mattis ultrices aliquam. Integer erat nulla, iaculis ut lacus eget, ullamcorper imperdiet est.",
+    "campaign_use": "Morbi elit mauris, auctor eget arcu quis, dignissim finibus risus. Cras eget mollis neque. Curabitur at ullamcorper lorem, sed porttitor turpis. Praesent et lacus nunc. Nullam posuere nulla vitae lorem finibus mattis. Proin semper malesuada enim, at tincidunt sapien viverra eu. Nunc facilisis a eros ullamcorper dapibus. Praesent tempus et metus tempor rhoncus. Ut luctus mauris vel dolor volutpat, eget rhoncus mi facilisis. Donec mattis orci non ligula sagittis, id maximus velit volutpat. Aenean gravida consectetur velit vitae porta. Ut eget eleifend urna."
+  },
+  "complications": {
+    "Dependence": {
+      "name": "",
+      "text": "Dependence:  Takes 1d6 Damage (Common; 1 Segment)",
+      "notes": "",
+      "options": "",
+      "cost": "40"
+    },
+    "Enraged": {
+      "name": "",
+      "text": "Enraged:  (Uncommon), go 11-, recover 11-",
+      "notes": "",
+      "options": "",
+      "cost": "15"
+    },
+    "Psychological Complication": {
+      "name": "",
+      "text": "Psychological Complication:  (Common; Strong)",
+      "notes": "",
+      "options": "",
+      "cost": "15"
+    }
+  },
+  "characteristics": {
+    "strength": {
+      "shortname": "STR",
+      "primary": {
+        "value": "30",
+        "roll": "15-"
+      },
+      "secondary": {
+        "value": "30",
+        "roll": "15-"
+      },
+      "cost": "20",
+      "damage": "6d6",
+      "lift_kg": "1600",
+      "end_cost": "6",
+      "notes": "HTH Damage 6d6  END [6]"
+    },
+    "dexterity": {
+      "shortname": "DEX",
+      "primary": {
+        "value": "30",
+        "roll": "15-"
+      },
+      "secondary": {
+        "value": "30",
+        "roll": "15-"
+      },
+      "cost": "40",
+      "notes": ""
+    },
+    "constitution": {
+      "shortname": "CON",
+      "primary": {
+        "value": "30",
+        "roll": "15-"
+      },
+      "secondary": {
+        "value": "30",
+        "roll": "15-"
+      },
+      "cost": "20",
+      "notes": ""
+    },
+    "intelligence": {
+      "shortname": "INT",
+      "primary": {
+        "value": "20",
+        "roll": "13-"
+      },
+      "secondary": {
+        "value": "20",
+        "roll": "13-"
+      },
+      "cost": "10",
+      "notes": "PER Roll 16-",
+      "perception": {
+        "shortname": "PER",
+        "roll": " 16-",
+        "notes": "PER Roll 16-"
+      }
+    },
+    "ego": {
+      "shortname": "EGO",
+      "primary": {
+        "value": "20",
+        "roll": "13-"
+      },
+      "secondary": {
+        "value": "20",
+        "roll": "13-"
+      },
+      "cost": "10",
+      "notes": ""
+    },
+    "presence": {
+      "shortname": "PRE",
+      "primary": {
+        "value": "30",
+        "roll": "15-"
+      },
+      "secondary": {
+        "value": "30",
+        "roll": "15-"
+      },
+      "cost": "20",
+      "notes": "PRE Attack: 6d6",
+      "attack": "6d6"
+    }
+  },
+  "combat": {
+    "offensive_combat_value": {
+      "shortname": "OCV",
+      "primary": {
+        "value": "10"
+      },
+      "secondary": {
+        "value": "10"
+      },
+      "cost": "35",
+      "notes": ""
+    },
+    "defensive_combat_value": {
+      "shortname": "DCV",
+      "primary": {
+        "value": "10"
+      },
+      "secondary": {
+        "value": "10"
+      },
+      "cost": "35",
+      "notes": ""
+    },
+    "offensive_mental_combat_value": {
+      "shortname": "OMCV",
+      "primary": {
+        "value": "10"
+      },
+      "secondary": {
+        "value": "10"
+      },
+      "cost": "21",
+      "notes": ""
+    },
+    "defensive_mental_combat_value": {
+      "shortname": "DMCV",
+      "primary": {
+        "value": "10"
+      },
+      "secondary": {
+        "value": "10"
+      },
+      "cost": "21",
+      "notes": ""
+    },
+    "offensive_social_combat_value": {
+      "shortname": "OSCV",
+      "primary": {
+        "value": ""
+      },
+      "secondary": {
+        "value": ""
+      },
+      "cost": "",
+      "notes": ""
+    },
+    "defensive_social_combat_value": {
+      "shortname": "DSCV",
+      "primary": {
+        "value": ""
+      },
+      "secondary": {
+        "value": ""
+      },
+      "cost": "",
+      "notes": ""
+    },
+    "speed": {
+      "shortname": "SPD",
+      "primary": {
+        "value": "5"
+      },
+      "secondary": {
+        "value": "5"
+      },
+      "cost": "30",
+      "phases": "3, 5, 8, 10, 12",
+      "notes": "3, 5, 8, 10, 12"
+    },
+    "lightning_reflexes": {
+      "levels": "2",
+      "text": "+2 DEX to act first with All Ranged Attacks",
+      "notes": ""
+    }
+  },
+  "defense": {
+    "physical_defense": {
+      "shortname": "PD",
+      "value": "20",
+      "cost": "6",
+      "notes": "20 PD (12 rPD)"
+    },
+    "physical_defense_resistant": {
+      "shortname": "rPD",
+      "value": "12",
+      "cost": "18",
+      "notes": "20 PD (12 rPD)"
+    },
+    "energy_defense": {
+      "shortname": "ED",
+      "value": "20",
+      "cost": "6",
+      "notes": "20 ED (12 rED)"
+    },
+    "energy_defense_resistant": {
+      "shortname": "rED",
+      "value": "12",
+      "cost": "18",
+      "notes": "20 ED (12 rED)"
+    },
+    "social_defense": {
+      "shortname": "SD",
+      "value": "",
+      "cost": "",
+      "notes": ""
+    }
+  },
+  "defense_powers": {
+    "Flash Defense; Hearing Group": {
+      "levels": "12",
+      "name": "",
+      "display": "Flash Defense",
+      "alias": "Flash Defense",
+      "input": "",
+      "notes": "",
+      "option": "Hearing Group",
+      "sfx": "Default",
+      "range": "",
+      "damage": "(12 points)",
+      "end": "0",
+      "real_cost": "18",
+      "active_cost": "18",
+      "adders": {
+      },
+      "modifiers": {
+        "Resistant": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Resistant",
+          "alias": "Resistant",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Power Defense": {
+      "levels": "12",
+      "name": "",
+      "display": "Power Defense",
+      "alias": "Power Defense",
+      "input": "",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "",
+      "damage": "12 points",
+      "end": "0",
+      "real_cost": "18",
+      "active_cost": "18",
+      "adders": {
+      },
+      "modifiers": {
+        "Resistant": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Resistant",
+          "alias": "Resistant",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Mental Defense": {
+      "levels": "12",
+      "name": "",
+      "display": "Mental Defense",
+      "alias": "Mental Defense",
+      "input": "",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "",
+      "damage": "12 points total",
+      "end": "0",
+      "real_cost": "18",
+      "active_cost": "18",
+      "adders": {
+      },
+      "modifiers": {
+        "Resistant": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Resistant",
+          "alias": "Resistant",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Flash Defense; Sight Group": {
+      "levels": "12",
+      "name": "",
+      "display": "Flash Defense",
+      "alias": "Flash Defense",
+      "input": "",
+      "notes": "",
+      "option": "Sight Group",
+      "sfx": "Default",
+      "range": "",
+      "damage": "(12 points)",
+      "end": "0",
+      "real_cost": "18",
+      "active_cost": "18",
+      "adders": {
+      },
+      "modifiers": {
+        "Resistant": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Resistant",
+          "alias": "Resistant",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Resistant Protection": {
+      "levels": "24",
+      "name": "",
+      "display": "Resistant Protection",
+      "alias": "Resistant Protection",
+      "input": "",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "",
+      "damage": "",
+      "end": "0",
+      "real_cost": "36",
+      "active_cost": "36",
+      "adders": {
+      },
+      "modifiers": {
+      }
+    }
+  },
+  "defense_compound_powers": {
+    "Djinn Form Damage Reduction: Compound Power": {
+      "Damage Reduction: Physical; Damage Reduction, Resistant, 50%": {
+        "levels": "0",
+        "name": "",
+        "display": "Damage Reduction",
+        "alias": "Damage Reduction",
+        "input": "Physical",
+        "notes": "",
+        "option": "Damage Reduction, Resistant, 50%",
+        "sfx": "Default",
+        "range": "",
+        "damage": "0d6",
+        "end": "0",
+        "real_cost": "30",
+        "active_cost": "30",
+        "adders": {
+        },
+        "modifiers": {
+        }
+      },
+      "Damage Reduction: Energy; Damage Reduction, Resistant, 50%": {
+        "levels": "0",
+        "name": "",
+        "display": "Damage Reduction",
+        "alias": "Damage Reduction",
+        "input": "Energy",
+        "notes": "",
+        "option": "Damage Reduction, Resistant, 50%",
+        "sfx": "Default",
+        "range": "",
+        "damage": "0d6",
+        "end": "0",
+        "real_cost": "30",
+        "active_cost": "30",
+        "adders": {
+        },
+        "modifiers": {
+        }
+      }
+    }
+  },
+  "martial_arts": {
+    "Basic Strike": {
+      "phase": "½",
+      "ocv": "+1",
+      "dcv": "+0",
+      "effect": "8d6 Strike",
+      "notes": ""
+    },
+    "Counterstrike": {
+      "phase": "½",
+      "ocv": "+2",
+      "dcv": "+2",
+      "effect": "8d6 Strike, Must Follow Block",
+      "notes": ""
+    },
+    "Fast Strike": {
+      "phase": "½",
+      "ocv": "+2",
+      "dcv": "+0",
+      "effect": "8d6 Strike",
+      "notes": ""
+    },
+    "Martial Dodge": {
+      "phase": "½",
+      "ocv": "--",
+      "dcv": "+5",
+      "effect": "Dodge, Affects All Attacks, Abort",
+      "notes": ""
+    },
+    "Martial Escape": {
+      "phase": "½",
+      "ocv": "+0",
+      "dcv": "+0",
+      "effect": "45 STR vs. Grabs",
+      "notes": ""
+    },
+    "Takedown": {
+      "phase": "½",
+      "ocv": "+1",
+      "dcv": "+1",
+      "effect": "6d6 Strike; Target Falls",
+      "notes": ""
+    },
+    "Basic Shot": {
+      "phase": "½",
+      "ocv": "+0",
+      "dcv": "+0",
+      "effect": "Strike, +2 DC",
+      "notes": ""
+    },
+    "Offensive Ranged Disarm": {
+      "phase": "½",
+      "ocv": "+1",
+      "dcv": "-1",
+      "effect": "Disarm, +2 DC to Disarm",
+      "notes": ""
+    }
+  },
+  "vitals": {
+    "recovery": {
+      "shortname": "REC",
+      "value": "20",
+      "cost": "16",
+      "notes": ""
+    },
+    "savoir_faire": {
+      "shortname": "SF",
+      "value": "",
+      "cost": "",
+      "notes": ""
+    },
+    "endurance": {
+      "shortname": "END",
+      "value": "100",
+      "cost": "16",
+      "notes": ""
+    },
+    "body": {
+      "shortname": "BODY",
+      "value": "30",
+      "cost": "20",
+      "notes": ""
+    },
+    "stun": {
+      "shortname": "STUN",
+      "value": "70",
+      "cost": "25",
+      "notes": ""
+    },
+    "composure": {
+      "shortname": "COMP",
+      "value": "",
+      "cost": "",
+      "notes": ""
+    }
+  },
+  "movement": {
+    "running": {
+      "shortname": "run",
+      "primary_value": "12",
+      "primary_value_noncom": "24",
+      "secondary_value": "12",
+      "secondary_value_noncom": "24",
+      "end_cost": "1",
+      "cost": "0"
+    },
+    "swimming": {
+      "shortname": "swim",
+      "primary_value": "4",
+      "primary_value_noncom": "8",
+      "secondary_value": "4",
+      "secondary_value_noncom": "8",
+      "end_cost": "1",
+      "cost": "0"
+    },
+    "leaping": {
+      "horizontal": {
+        "shortname": "h.leap",
+        "value": "4",
+        "cost": "0"
+      },
+      "vertical": {
+        "shortname": "v.leap",
+        "value": "2"
+      }
+    }
+  },
+  "movement_others": {
+    "Flight": {
+      "combat": {
+        "value": "60",
+        "real_cost": "97",
+        "active_cost": "97",
+        "text": "Flight 60m, x4 Noncombat, Reduced Endurance (0 END; +½)",
+        "option": ""
+      },
+      "non-combat": {
+        "value_2x": "120",
+        "value_4x": "240"
+      },
+      "notes": ""
+    },
+    "Teleportation": {
+      "combat": {
+        "value": "47",
+        "real_cost": "0",
+        "active_cost": "285",
+        "text": "Teleportation 47m, Safe Aquatic Teleport, x2 Increased Mass, Safe Blind Teleport (+¼), Reduced Endurance (½ END; +¼), Usable Simultaneously (up to 64 people at once; +1 ½), Grantor pays the END whenever the power is used, MegaScale (1m = 10,000 km; +2)",
+        "option": ""
+      },
+      "non-combat": {
+        "value_2x": "94",
+        "value_4x": "188"
+      },
+      "notes": ""
+    },
+    "Extra-Dimensional Movement": {
+      "combat": {
+        "value": "0",
+        "real_cost": "0",
+        "active_cost": "245",
+        "text": "Extra-Dimensional Movement (Any Dimension, Any Location), x32 Increased Weight, Safe Blind Travel (+¼), Reduced Endurance (½ END; +¼), Difficult To Dispel (x4 Active Points; +½), Usable Simultaneously (up to 64 people at once; +1 ½), Grantor pays the END whenever the power is used",
+        "option": "Any Dimension, Any Location"
+      },
+      "non-combat": {
+        "value_2x": "0",
+        "value_4x": "0"
+      },
+      "notes": ""
+    }
+  },
+  "perks": {
+    "Resource Points; Equipment Points": {
+      "levels": "0",
+      "name": "",
+      "display": "Resource Points",
+      "alias": "Resource Points",
+      "roll": "",
+      "text": "Equipment Points: 75",
+      "notes": "",
+      "option": "Equipment Points",
+      "cost": "0",
+      "sfx": "Default",
+      "adders": {
+      }
+    }
+  },
+  "talents": {
+    "Universal Translator": {
+      "levels": "0",
+      "name": "",
+      "display": "Universal Translator",
+      "alias": "Universal Translator",
+      "roll": "13-",
+      "text": "Universal Translator 13-",
+      "notes": "",
+      "option": "",
+      "cost": "20",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "Absolute Time Sense": {
+      "levels": "0",
+      "name": "",
+      "display": "Absolute Time Sense",
+      "alias": "Absolute Time Sense",
+      "roll": "",
+      "text": "Absolute Time Sense",
+      "notes": "",
+      "option": "",
+      "cost": "3",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "Bump Of Direction": {
+      "levels": "0",
+      "name": "",
+      "display": "Bump Of Direction",
+      "alias": "Bump Of Direction",
+      "roll": "",
+      "text": "Bump Of Direction",
+      "notes": "",
+      "option": "",
+      "cost": "3",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "Striking Appearance; vs. all characters": {
+      "levels": "4",
+      "name": "",
+      "display": "Striking Appearance",
+      "alias": "Striking Appearance",
+      "roll": "",
+      "text": "+4/+4d6 Striking Appearance (vs. all characters)",
+      "notes": "",
+      "option": "vs. all characters",
+      "cost": "12",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "Lightning Reflexes; All Ranged Attacks": {
+      "levels": "2",
+      "name": "",
+      "display": "Lightning Reflexes",
+      "alias": "Lightning Reflexes",
+      "roll": "",
+      "text": "+2 DEX to act first with All Ranged Attacks",
+      "notes": "",
+      "option": "All Ranged Attacks",
+      "cost": "1",
+      "sfx": "Default",
+      "adders": {
+      }
+    }
+  },
+  "skills": {
+    "Skill Levels; Overall": {
+      "alias": "Skill Levels",
+      "display": "Skill Levels",
+      "input": "",
+      "levels": "1",
+      "name": "",
+      "roll": "",
+      "notes": "",
+      "option": "Overall",
+      "cost": "12",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "Combat Skill Levels; with All Attacks": {
+      "alias": "Combat Skill Levels",
+      "display": "Combat Skill Levels",
+      "input": "",
+      "levels": "3",
+      "name": "",
+      "roll": "",
+      "notes": "",
+      "option": "with All Attacks",
+      "cost": "30",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "Skill Levels; with one mode of Movement": {
+      "alias": "Skill Levels",
+      "display": "Skill Levels",
+      "input": "",
+      "levels": "4",
+      "name": "",
+      "roll": "",
+      "notes": "",
+      "option": "with one mode of Movement",
+      "cost": "8",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "Acting": {
+      "alias": "Acting",
+      "display": "Acting",
+      "input": "",
+      "levels": "1",
+      "name": "",
+      "roll": "16-",
+      "notes": "",
+      "option": "",
+      "cost": "5",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "Charm": {
+      "alias": "Charm",
+      "display": "Charm",
+      "input": "",
+      "levels": "1",
+      "name": "",
+      "roll": "16-",
+      "notes": "",
+      "option": "",
+      "cost": "5",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "Concealment": {
+      "alias": "Concealment",
+      "display": "Concealment",
+      "input": "",
+      "levels": "2",
+      "name": "",
+      "roll": "15-",
+      "notes": "",
+      "option": "",
+      "cost": "7",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "Deduction": {
+      "alias": "Deduction",
+      "display": "Deduction",
+      "input": "",
+      "levels": "2",
+      "name": "",
+      "roll": "15-",
+      "notes": "",
+      "option": "",
+      "cost": "7",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "Disguise": {
+      "alias": "Disguise",
+      "display": "Disguise",
+      "input": "",
+      "levels": "2",
+      "name": "",
+      "roll": "15-",
+      "notes": "",
+      "option": "",
+      "cost": "7",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "Jack of All Trades": {
+      "is_enhancer": true,
+      "alias": "Jack of All Trades",
+      "display": "Jack of All Trades",
+      "input": "",
+      "levels": "0",
+      "name": "",
+      "roll": "<!--SKILL_ROLL-->",
+      "notes": "",
+      "option": "",
+      "cost": "3",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "KS: Arcane And Occult Lore": {
+      "alias": "KS",
+      "display": "KS",
+      "input": "Arcane And Occult Lore",
+      "levels": "5",
+      "name": "",
+      "roll": "18-",
+      "notes": "",
+      "option": "",
+      "cost": "8",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "KS: History": {
+      "alias": "KS",
+      "display": "KS",
+      "input": "History",
+      "levels": "5",
+      "name": "",
+      "roll": "18-",
+      "notes": "",
+      "option": "",
+      "cost": "8",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "KS: Legends And Lore": {
+      "alias": "KS",
+      "display": "KS",
+      "input": "Legends And Lore",
+      "levels": "5",
+      "name": "",
+      "roll": "18-",
+      "notes": "",
+      "option": "",
+      "cost": "8",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "KS: Literature": {
+      "alias": "KS",
+      "display": "KS",
+      "input": "Literature",
+      "levels": "5",
+      "name": "",
+      "roll": "18-",
+      "notes": "",
+      "option": "",
+      "cost": "8",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "Lipreading": {
+      "alias": "Lipreading",
+      "display": "Lipreading",
+      "input": "",
+      "levels": "2",
+      "name": "",
+      "roll": "15-",
+      "notes": "",
+      "option": "",
+      "cost": "7",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "Mimicry": {
+      "alias": "Mimicry",
+      "display": "Mimicry",
+      "input": "",
+      "levels": "2",
+      "name": "",
+      "roll": "15-",
+      "notes": "",
+      "option": "",
+      "cost": "7",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "Navigation": {
+      "alias": "Navigation",
+      "display": "Navigation",
+      "input": "",
+      "levels": "2",
+      "name": "",
+      "roll": "15-",
+      "notes": "",
+      "option": "",
+      "cost": "9",
+      "sfx": "Default",
+      "adders": {
+        "Land": {
+          "levels": "0",
+          "name": "",
+          "display": "Land",
+          "alias": "Land",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "2"
+        },
+        "Marine": {
+          "levels": "0",
+          "name": "",
+          "display": "Marine",
+          "alias": "Marine",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "2"
+        },
+        "Air": {
+          "levels": "0",
+          "name": "",
+          "display": "Air",
+          "alias": "Air",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "2"
+        },
+        "Dimensional": {
+          "levels": "0",
+          "name": "",
+          "display": "Dimensional",
+          "alias": "Dimensional",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "2"
+        }
+      }
+    },
+    "Persuasion": {
+      "alias": "Persuasion",
+      "display": "Persuasion",
+      "input": "",
+      "levels": "1",
+      "name": "",
+      "roll": "16-",
+      "notes": "",
+      "option": "",
+      "cost": "5",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "Sleight Of Hand": {
+      "alias": "Sleight Of Hand",
+      "display": "Sleight Of Hand",
+      "input": "",
+      "levels": "1",
+      "name": "",
+      "roll": "16-",
+      "notes": "",
+      "option": "",
+      "cost": "5",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "Stealth": {
+      "alias": "Stealth",
+      "display": "Stealth",
+      "input": "",
+      "levels": "1",
+      "name": "",
+      "roll": "16-",
+      "notes": "",
+      "option": "",
+      "cost": "5",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "Streetwise": {
+      "alias": "Streetwise",
+      "display": "Streetwise",
+      "input": "",
+      "levels": "1",
+      "name": "",
+      "roll": "16-",
+      "notes": "",
+      "option": "",
+      "cost": "5",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "TF": {
+      "alias": "TF",
+      "display": "Transport Familiarity",
+      "input": "",
+      "levels": "0",
+      "name": "",
+      "roll": "",
+      "notes": "",
+      "option": "",
+      "cost": "8",
+      "sfx": "Default",
+      "adders": {
+        "Riding Animals": {
+          "levels": "0",
+          "name": "",
+          "display": "Riding Animals",
+          "alias": "Riding Animals",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "2"
+        },
+        "Muscle-Powered Ground Vehicles": {
+          "levels": "0",
+          "name": "",
+          "display": "Muscle-Powered Ground Vehicles",
+          "alias": "Muscle-Powered Ground Vehicles",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "2"
+        },
+        "Water Vehicles": {
+          "levels": "0",
+          "name": "",
+          "display": "Water Vehicles",
+          "alias": "Water Vehicles",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "4"
+        }
+      }
+    },
+    "Tracking": {
+      "alias": "Tracking",
+      "display": "Tracking",
+      "input": "",
+      "levels": "2",
+      "name": "",
+      "roll": "15-",
+      "notes": "",
+      "option": "",
+      "cost": "7",
+      "sfx": "Default",
+      "adders": {
+      }
+    },
+    "WF": {
+      "alias": "WF",
+      "display": "Weapon Familiarity",
+      "input": "",
+      "levels": "0",
+      "name": "",
+      "roll": "",
+      "notes": "",
+      "option": "",
+      "cost": "4",
+      "sfx": "Default",
+      "adders": {
+        "Common Melee Weapons": {
+          "levels": "0",
+          "name": "",
+          "display": "Common Melee Weapons",
+          "alias": "Common Melee Weapons",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "2"
+        },
+        "Common Missile Weapons": {
+          "levels": "0",
+          "name": "",
+          "display": "Common Missile Weapons",
+          "alias": "Common Missile Weapons",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "2"
+        }
+      }
+    }
+  },
+  "powers": {
+    "Djinn Form": {
+      "levels": "0",
+      "name": "",
+      "display": "",
+      "alias": "Djinn Form",
+      "input": "",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "",
+      "damage": "",
+      "end": "",
+      "real_cost": "0",
+      "active_cost": "0",
+      "adders": {
+      },
+      "modifiers": {
+      }
+    },
+    "Regeneration; Hour": {
+      "levels": "5",
+      "name": "",
+      "display": "Regeneration",
+      "alias": "Regeneration",
+      "input": "",
+      "notes": "",
+      "option": "Hour",
+      "sfx": "Cosmic Energy",
+      "range": "",
+      "damage": "5 BODY per Hour",
+      "end": "0",
+      "real_cost": "75",
+      "active_cost": "75",
+      "adders": {
+        "Resurrection": {
+          "levels": "0",
+          "name": "",
+          "display": "Resurrection",
+          "alias": "Resurrection",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "20"
+        }
+      },
+      "modifiers": {
+        "Inherent": {
+          "mod_value": "+¼",
+          "levels": "0",
+          "name": "",
+          "display": "Inherent",
+          "alias": "Inherent",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Djinn's Eyes: Increased Arc Of Perception (360 Degrees); Sight Group": {
+      "levels": "0",
+      "name": "Djinn's Eyes",
+      "display": "Increased Arc Of Perception (360 Degrees)",
+      "alias": "Increased Arc Of Perception (360 Degrees)",
+      "input": "",
+      "notes": "",
+      "option": "Sight Group",
+      "sfx": "Default",
+      "range": "",
+      "damage": "",
+      "end": "0",
+      "real_cost": "10",
+      "active_cost": "10",
+      "adders": {
+      },
+      "modifiers": {
+      }
+    },
+    "Djinn's Eyes: Nightvision": {
+      "levels": "0",
+      "name": "Djinn's Eyes",
+      "display": "Nightvision",
+      "alias": "Nightvision",
+      "input": "",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "",
+      "damage": "",
+      "end": "0",
+      "real_cost": "5",
+      "active_cost": "5",
+      "adders": {
+      },
+      "modifiers": {
+      }
+    },
+    "Djinn's Senses: Enhanced Perception; all Sense Groups": {
+      "levels": "3",
+      "name": "Djinn's Senses",
+      "display": "Enhanced Perception",
+      "alias": "Enhanced Perception",
+      "input": "",
+      "notes": "",
+      "option": "all Sense Groups",
+      "sfx": "Default",
+      "range": "",
+      "damage": "",
+      "end": "0",
+      "real_cost": "9",
+      "active_cost": "9",
+      "adders": {
+      },
+      "modifiers": {
+      }
+    },
+    "Djinn's Sight: Spatial Awareness": {
+      "levels": "0",
+      "name": "Djinn's Sight",
+      "display": "Spatial Awareness",
+      "alias": "Spatial Awareness",
+      "input": "",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "",
+      "damage": "",
+      "end": "0",
+      "real_cost": "52",
+      "active_cost": "52",
+      "adders": {
+        "Discriminatory": {
+          "levels": "0",
+          "name": "",
+          "display": "Discriminatory",
+          "alias": "Discriminatory",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "5"
+        },
+        "Analyze": {
+          "levels": "0",
+          "name": "",
+          "display": "Analyze",
+          "alias": "Analyze",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "5"
+        },
+        "Increased Arc Of Perception (360 Degrees)": {
+          "levels": "0",
+          "name": "",
+          "display": "Increased Arc Of Perception (360 Degrees)",
+          "alias": "Increased Arc Of Perception (360 Degrees)",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "5"
+        },
+        "Range": {
+          "levels": "0",
+          "name": "",
+          "display": "Range",
+          "alias": "Range",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "5"
+        }
+      },
+      "modifiers": {
+      }
+    },
+    "Djinn's Wings: Flight": {
+      "levels": "60",
+      "name": "Djinn's Wings",
+      "display": "Flight",
+      "alias": "Flight",
+      "input": "",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "",
+      "damage": "60m",
+      "end": "0",
+      "real_cost": "97",
+      "active_cost": "97",
+      "adders": {
+        "x4 Noncombat": {
+          "levels": "1",
+          "name": "",
+          "display": "x2 Noncombat",
+          "alias": "x4 Noncombat",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "5"
+        }
+      },
+      "modifiers": {
+        "Reduced Endurance; 0 END": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Reduced Endurance",
+          "alias": "Reduced Endurance",
+          "input": "",
+          "notes": "",
+          "option": "0 END",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Flash Defense; Hearing Group": {
+      "levels": "12",
+      "name": "",
+      "display": "Flash Defense",
+      "alias": "Flash Defense",
+      "input": "",
+      "notes": "",
+      "option": "Hearing Group",
+      "sfx": "Default",
+      "range": "",
+      "damage": "(12 points)",
+      "end": "0",
+      "real_cost": "18",
+      "active_cost": "18",
+      "adders": {
+      },
+      "modifiers": {
+        "Resistant": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Resistant",
+          "alias": "Resistant",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Life Support": {
+      "levels": "0",
+      "name": "",
+      "display": "Life Support",
+      "alias": "LS",
+      "input": "",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "",
+      "damage": "",
+      "end": "0",
+      "real_cost": "40",
+      "active_cost": "40",
+      "adders": {
+        "Eating:; Character does not eat": {
+          "levels": "0",
+          "name": "",
+          "display": "Eating",
+          "alias": "Eating:",
+          "input": "",
+          "notes": "",
+          "option": "Character does not eat",
+          "sfx": "Default",
+          "cost": "3"
+        },
+        "Immunity; All terrestrial poisons": {
+          "levels": "0",
+          "name": "",
+          "display": "Immunity",
+          "alias": "Immunity",
+          "input": "",
+          "notes": "",
+          "option": "All terrestrial poisons",
+          "sfx": "Default",
+          "cost": "5"
+        },
+        "Immunity:; All terrestrial diseases": {
+          "levels": "0",
+          "name": "",
+          "display": "Immunity",
+          "alias": "Immunity:",
+          "input": "",
+          "notes": "",
+          "option": "All terrestrial diseases",
+          "sfx": "Default",
+          "cost": "5"
+        },
+        "Longevity:; Immortal": {
+          "levels": "0",
+          "name": "",
+          "display": "Longevity",
+          "alias": "Longevity:",
+          "input": "",
+          "notes": "",
+          "option": "Immortal",
+          "sfx": "Default",
+          "cost": "5"
+        },
+        "Safe in High Pressure": {
+          "levels": "0",
+          "name": "",
+          "display": "Safe in High Pressure",
+          "alias": "Safe in High Pressure",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "1"
+        },
+        "Safe in High Radiation": {
+          "levels": "0",
+          "name": "",
+          "display": "Safe in High Radiation",
+          "alias": "Safe in High Radiation",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "2"
+        },
+        "Safe in Intense Cold": {
+          "levels": "0",
+          "name": "",
+          "display": "Safe in Intense Cold",
+          "alias": "Safe in Intense Cold",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "2"
+        },
+        "Safe in Intense Heat": {
+          "levels": "0",
+          "name": "",
+          "display": "Safe in Intense Heat",
+          "alias": "Safe in Intense Heat",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "2"
+        },
+        "Safe in Low Pressure/Vacuum": {
+          "levels": "0",
+          "name": "",
+          "display": "Safe in Low Pressure/Vacuum",
+          "alias": "Safe in Low Pressure/Vacuum",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "2"
+        },
+        "Self-Contained Breathing": {
+          "levels": "0",
+          "name": "",
+          "display": "Self-Contained Breathing",
+          "alias": "Self-Contained Breathing",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "10"
+        },
+        "Sleeping:; Character does not sleep": {
+          "levels": "0",
+          "name": "",
+          "display": "Sleeping",
+          "alias": "Sleeping:",
+          "input": "",
+          "notes": "",
+          "option": "Character does not sleep",
+          "sfx": "Default",
+          "cost": "3"
+        }
+      },
+      "modifiers": {
+      }
+    },
+    "Power Defense": {
+      "levels": "12",
+      "name": "",
+      "display": "Power Defense",
+      "alias": "Power Defense",
+      "input": "",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "",
+      "damage": "12 points",
+      "end": "0",
+      "real_cost": "18",
+      "active_cost": "18",
+      "adders": {
+      },
+      "modifiers": {
+        "Resistant": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Resistant",
+          "alias": "Resistant",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Mental Defense": {
+      "levels": "12",
+      "name": "",
+      "display": "Mental Defense",
+      "alias": "Mental Defense",
+      "input": "",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "",
+      "damage": "12 points total",
+      "end": "0",
+      "real_cost": "18",
+      "active_cost": "18",
+      "adders": {
+      },
+      "modifiers": {
+        "Resistant": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Resistant",
+          "alias": "Resistant",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Flash Defense; Sight Group": {
+      "levels": "12",
+      "name": "",
+      "display": "Flash Defense",
+      "alias": "Flash Defense",
+      "input": "",
+      "notes": "",
+      "option": "Sight Group",
+      "sfx": "Default",
+      "range": "",
+      "damage": "(12 points)",
+      "end": "0",
+      "real_cost": "18",
+      "active_cost": "18",
+      "adders": {
+      },
+      "modifiers": {
+        "Resistant": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Resistant",
+          "alias": "Resistant",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Resistant Protection": {
+      "levels": "24",
+      "name": "",
+      "display": "Resistant Protection",
+      "alias": "Resistant Protection",
+      "input": "",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "",
+      "damage": "",
+      "end": "0",
+      "real_cost": "36",
+      "active_cost": "36",
+      "adders": {
+      },
+      "modifiers": {
+      }
+    },
+    "Form of Air": {
+      "levels": "0",
+      "name": "",
+      "display": "",
+      "alias": "Form of Air",
+      "input": "",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "",
+      "damage": "",
+      "end": "",
+      "real_cost": "0",
+      "active_cost": "0",
+      "adders": {
+      },
+      "modifiers": {
+      }
+    },
+    "Form Of  Air: Desolidification: magic": {
+      "levels": "0",
+      "name": "Form Of  Air",
+      "display": "Desolidification",
+      "alias": "Desolidification",
+      "input": "magic",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "",
+      "damage": "",
+      "end": "0",
+      "real_cost": "60",
+      "active_cost": "60",
+      "adders": {
+      },
+      "modifiers": {
+        "Reduced Endurance; 0 END": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Reduced Endurance",
+          "alias": "Reduced Endurance",
+          "input": "",
+          "notes": "",
+          "option": "0 END",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Form Of Air: Invisibility; Sight Group": {
+      "levels": "0",
+      "name": "Form Of Air",
+      "display": "Invisibility",
+      "alias": "Invisibility",
+      "input": "",
+      "notes": "",
+      "option": "Sight Group",
+      "sfx": "Default",
+      "range": "",
+      "damage": "",
+      "end": "0",
+      "real_cost": "45",
+      "active_cost": "45",
+      "adders": {
+        "No Fringe": {
+          "levels": "0",
+          "name": "",
+          "display": "No Fringe",
+          "alias": "No Fringe",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "10"
+        }
+      },
+      "modifiers": {
+        "Reduced Endurance; 0 END": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Reduced Endurance",
+          "alias": "Reduced Endurance",
+          "input": "",
+          "notes": "",
+          "option": "0 END",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Form Of Air: Shrinking": {
+      "levels": "6",
+      "name": "Form Of Air",
+      "display": "Shrinking",
+      "alias": "Shrinking",
+      "input": "",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "",
+      "damage": "0.0314 m tall, 0.0004 mass, -12 PER Rolls to perceive character, +12 DCV, takes +36m KB",
+      "end": "0",
+      "real_cost": "54",
+      "active_cost": "54",
+      "adders": {
+      },
+      "modifiers": {
+        "Reduced Endurance; 0 END": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Reduced Endurance",
+          "alias": "Reduced Endurance",
+          "input": "",
+          "notes": "",
+          "option": "0 END",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Mastery Of Form: Multiform": {
+      "levels": "300",
+      "name": "Mastery Of Form",
+      "display": "Multiform",
+      "alias": "Multiform",
+      "input": "",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "",
+      "damage": "300 Character Points in the most expensive form",
+      "end": "0",
+      "real_cost": "95",
+      "active_cost": "95",
+      "adders": {
+        "x128 Number Of Forms": {
+          "levels": "7",
+          "name": "",
+          "display": "x128 Number Of Forms",
+          "alias": "x128 Number Of Forms",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "35"
+        }
+      },
+      "modifiers": {
+      }
+    },
+    "The Winds My Servant: Telekinesis": {
+      "levels": "40",
+      "name": "The Winds My Servant",
+      "display": "Telekinesis",
+      "alias": "Telekinesis",
+      "input": "",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "600m",
+      "damage": "(40 STR)",
+      "end": "0",
+      "real_cost": "105",
+      "active_cost": "105",
+      "adders": {
+        "Fine Manipulation": {
+          "levels": "0",
+          "name": "",
+          "display": "Fine Manipulation",
+          "alias": "Fine Manipulation",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "10"
+        }
+      },
+      "modifiers": {
+        "Reduced Endurance; 0 END": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Reduced Endurance",
+          "alias": "Reduced Endurance",
+          "input": "",
+          "notes": "",
+          "option": "0 END",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Wind Blast: Blast: ED": {
+      "levels": "8",
+      "name": "Wind Blast",
+      "display": "Blast",
+      "alias": "Blast",
+      "input": "ED",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "400m",
+      "damage": "8d6",
+      "end": "12",
+      "real_cost": "120",
+      "active_cost": "120",
+      "adders": {
+      },
+      "modifiers": {
+        "Variable Advantage": {
+          "mod_value": "+2",
+          "levels": "0",
+          "name": "",
+          "display": "Variable Advantage",
+          "alias": "Variable Advantage",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Djinn Powers: Variable Power Pool: Magic Pool": {
+      "is_vpp": true,
+      "levels": "1200",
+      "name": "Djinn Powers",
+      "display": "Variable Power Pool",
+      "alias": "Variable Power Pool",
+      "input": "Magic Pool",
+      "notes": "",
+      "option": "",
+      "sfx": "Cosmic Energy",
+      "range": "",
+      "damage": "",
+      "end": "",
+      "real_cost": "1800",
+      "active_cost": "1800",
+      "adders": {
+        "Control Cost": {
+          "levels": "300",
+          "name": "",
+          "display": "",
+          "alias": "Control Cost",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "150"
+        }
+      },
+      "modifiers": {
+      }
+    },
+    "Healing: BODY": {
+      "levels": "10",
+      "name": "",
+      "display": "Healing",
+      "alias": "Healing",
+      "input": "BODY",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "1,000m",
+      "damage": "10d6",
+      "end": "13",
+      "real_cost": "0",
+      "active_cost": "289",
+      "adders": {
+        "Can Heal Limbs": {
+          "levels": "0",
+          "name": "",
+          "display": "Can Heal Limbs",
+          "alias": "Can Heal Limbs",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "5"
+        }
+      },
+      "modifiers": {
+        "Expanded Effect (x2 Characteristics or Powers simultaneously)": {
+          "mod_value": "+½",
+          "levels": "2",
+          "name": "",
+          "display": "Expanded Effect (x2 Characteristics or Powers simultaneously)",
+          "alias": "Expanded Effect (x2 Characteristics or Powers simultaneously)",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Variable Effect: Characteristics": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Variable Effect",
+          "alias": "Variable Effect",
+          "input": "Characteristics",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Reduced Endurance; Half END": {
+          "mod_value": "+¼",
+          "levels": "0",
+          "name": "",
+          "display": "Reduced Endurance",
+          "alias": "Reduced Endurance",
+          "input": "",
+          "notes": "",
+          "option": "Half END",
+          "sfx": "Default"
+        },
+        "Ranged; Ranged": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Ranged",
+          "alias": "Ranged",
+          "input": "",
+          "notes": "",
+          "option": "Ranged",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Blast: PD": {
+      "levels": "10",
+      "name": "",
+      "display": "Blast",
+      "alias": "Blast",
+      "input": "PD",
+      "notes": "",
+      "option": "",
+      "sfx": "Cosmic Energy",
+      "range": "500m",
+      "damage": "10d6",
+      "end": "14",
+      "real_cost": "0",
+      "active_cost": "300",
+      "adders": {
+      },
+      "modifiers": {
+        "Affects Physical World": {
+          "mod_value": "+2",
+          "levels": "0",
+          "name": "",
+          "display": "Affects Physical World",
+          "alias": "Affects Physical World",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Area Of Effect; Radius": {
+          "mod_value": "+1 ¼",
+          "levels": "16",
+          "name": "",
+          "display": "Area Of Effect",
+          "alias": "Area Of Effect",
+          "input": "",
+          "notes": "",
+          "option": "Radius",
+          "sfx": "Default"
+        },
+        "No Range Modifier": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "No Range Modifier",
+          "alias": "No Range Modifier",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Armor Piercing": {
+          "mod_value": "+½",
+          "levels": "2",
+          "name": "",
+          "display": "Armor Piercing",
+          "alias": "Armor Piercing",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Penetrating": {
+          "mod_value": "+½",
+          "levels": "1",
+          "name": "",
+          "display": "Penetrating",
+          "alias": "Penetrating",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Reduced Endurance; Half END": {
+          "mod_value": "+¼",
+          "levels": "0",
+          "name": "",
+          "display": "Reduced Endurance",
+          "alias": "Reduced Endurance",
+          "input": "",
+          "notes": "",
+          "option": "Half END",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Mental Blast: Human": {
+      "levels": "10",
+      "name": "",
+      "display": "Mental Blast",
+      "alias": "Mental Blast",
+      "input": "Human",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "LOS",
+      "damage": "10d6",
+      "end": "13",
+      "real_cost": "0",
+      "active_cost": "300",
+      "adders": {
+      },
+      "modifiers": {
+        "Armor Piercing": {
+          "mod_value": "+½",
+          "levels": "2",
+          "name": "",
+          "display": "Armor Piercing",
+          "alias": "Armor Piercing",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Penetrating": {
+          "mod_value": "+½",
+          "levels": "1",
+          "name": "",
+          "display": "Penetrating",
+          "alias": "Penetrating",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Area Of Effect; Cone": {
+          "mod_value": "+¾",
+          "levels": "16",
+          "name": "",
+          "display": "Area Of Effect",
+          "alias": "Area Of Effect",
+          "input": "",
+          "notes": "",
+          "option": "Cone",
+          "sfx": "Default"
+        },
+        "Reduced Endurance; Half END": {
+          "mod_value": "+¼",
+          "levels": "0",
+          "name": "",
+          "display": "Reduced Endurance",
+          "alias": "Reduced Endurance",
+          "input": "",
+          "notes": "",
+          "option": "Half END",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Variable: Drain: STUN": {
+      "levels": "5",
+      "name": "Variable",
+      "display": "Drain",
+      "alias": "Drain",
+      "input": "STUN",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "500m",
+      "damage": "5d6",
+      "end": "13",
+      "real_cost": "0",
+      "active_cost": "300",
+      "adders": {
+      },
+      "modifiers": {
+        "Delayed Return Rate; 5 Points per Day": {
+          "mod_value": "+2 ¼",
+          "levels": "0",
+          "name": "",
+          "display": "Delayed Return Rate",
+          "alias": "Delayed Return Rate",
+          "input": "",
+          "notes": "",
+          "option": "5 Points per Day",
+          "sfx": "Default"
+        },
+        "No Range Modifier": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "No Range Modifier",
+          "alias": "No Range Modifier",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Variable Effect: Characteristics": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Variable Effect",
+          "alias": "Variable Effect",
+          "input": "Characteristics",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Reduced Endurance; Half END": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Reduced Endurance",
+          "alias": "Reduced Endurance",
+          "input": "",
+          "notes": "",
+          "option": "Half END",
+          "sfx": "Default"
+        },
+        "Autofire; 3 Shots": {
+          "mod_value": "+1 ¼",
+          "levels": "0",
+          "name": "",
+          "display": "Autofire",
+          "alias": "Autofire",
+          "input": "",
+          "notes": "",
+          "option": "3 Shots",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Create Wind Storm: Change Environment": {
+      "levels": "0",
+      "name": "Create Wind Storm",
+      "display": "Change Environment",
+      "alias": "Change Environment",
+      "input": "",
+      "notes": "",
+      "option": "",
+      "sfx": "Air/Wind",
+      "range": "790m",
+      "damage": "",
+      "end": "0",
+      "real_cost": "0",
+      "active_cost": "252",
+      "adders": {
+        "Alterable Origin Point": {
+          "levels": "0",
+          "name": "",
+          "display": "Alterable Origin Point",
+          "alias": "Alterable Origin Point",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "5"
+        },
+        "-5m of any mode of Movement": {
+          "levels": "5",
+          "name": "",
+          "display": "-5m of any mode of Movement",
+          "alias": "-5m of any mode of Movement",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "5"
+        },
+        "+6 Wind Levels": {
+          "levels": "6",
+          "name": "",
+          "display": "+6 Wind Levels",
+          "alias": "+6 Wind Levels",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "30"
+        },
+        "Long-Lasting; Permanent": {
+          "levels": "0",
+          "name": "",
+          "display": "Long-Lasting",
+          "alias": "Long-Lasting",
+          "input": "",
+          "notes": "",
+          "option": "Permanent",
+          "sfx": "Default",
+          "cost": "16"
+        },
+        "-4 Characteristic Roll and all Skill Rolls based on Characteristic": {
+          "levels": "4",
+          "name": "",
+          "display": "-4 Characteristic Roll and all Skill Rolls based on Characteristic",
+          "alias": "-4 Characteristic Roll and all Skill Rolls based on Characteristic",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "16"
+        },
+        "-4 PER Roll; Sight Group": {
+          "levels": "4",
+          "name": "",
+          "display": "-4 PER Roll",
+          "alias": "-4 PER Roll",
+          "input": "",
+          "notes": "",
+          "option": "Sight Group",
+          "sfx": "Default",
+          "cost": "12"
+        }
+      },
+      "modifiers": {
+        "Area Of Effect; Radius": {
+          "mod_value": "+1",
+          "levels": "32",
+          "name": "",
+          "display": "Area Of Effect",
+          "alias": "Area Of Effect",
+          "input": "",
+          "notes": "",
+          "option": "Radius",
+          "sfx": "Default"
+        },
+        "Hole In The Middle; can be changed any time": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Hole In The Middle",
+          "alias": "Hole In The Middle",
+          "input": "",
+          "notes": "",
+          "option": "can be changed any time",
+          "sfx": "Default"
+        },
+        "Reduced Endurance; 0 END": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Reduced Endurance",
+          "alias": "Reduced Endurance",
+          "input": "",
+          "notes": "",
+          "option": "0 END",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Dispel: Magic": {
+      "levels": "12",
+      "name": "",
+      "display": "Dispel",
+      "alias": "Dispel",
+      "input": "Magic",
+      "notes": "",
+      "option": "",
+      "sfx": "Cosmic Energy",
+      "range": "370m",
+      "damage": "12d6+1",
+      "end": "14",
+      "real_cost": "0",
+      "active_cost": "296",
+      "adders": {
+        "+1 pip": {
+          "levels": "0",
+          "name": "",
+          "display": "+1 pip",
+          "alias": "+1 pip",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "1"
+        }
+      },
+      "modifiers": {
+        "Affects Desolidified; Any form of Desolidification": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Affects Desolidified",
+          "alias": "Affects Desolidified",
+          "input": "",
+          "notes": "",
+          "option": "Any form of Desolidification",
+          "sfx": "Default"
+        },
+        "Affects Physical World": {
+          "mod_value": "+2",
+          "levels": "0",
+          "name": "",
+          "display": "Affects Physical World",
+          "alias": "Affects Physical World",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Area Of Effect; Radius": {
+          "mod_value": "+1 ½",
+          "levels": "20",
+          "name": "",
+          "display": "Area Of Effect",
+          "alias": "Area Of Effect",
+          "input": "",
+          "notes": "",
+          "option": "Radius",
+          "sfx": "Default"
+        },
+        "Cumulative": {
+          "mod_value": "+¾",
+          "levels": "1",
+          "name": "",
+          "display": "Cumulative",
+          "alias": "Cumulative",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Penetrating": {
+          "mod_value": "+½",
+          "levels": "1",
+          "name": "",
+          "display": "Penetrating",
+          "alias": "Penetrating",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Armor Piercing": {
+          "mod_value": "+½",
+          "levels": "2",
+          "name": "",
+          "display": "Armor Piercing",
+          "alias": "Armor Piercing",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "No Range Modifier": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "No Range Modifier",
+          "alias": "No Range Modifier",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Reduced Endurance; Half END": {
+          "mod_value": "+¼",
+          "levels": "0",
+          "name": "",
+          "display": "Reduced Endurance",
+          "alias": "Reduced Endurance",
+          "input": "",
+          "notes": "",
+          "option": "Half END",
+          "sfx": "Default"
+        },
+        "Variable Effect: Magic": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Variable Effect",
+          "alias": "Variable Effect",
+          "input": "Magic",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Teleportation": {
+      "levels": "47",
+      "name": "",
+      "display": "Teleportation",
+      "alias": "Teleportation",
+      "input": "",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "",
+      "damage": "47m",
+      "end": "13",
+      "real_cost": "0",
+      "active_cost": "285",
+      "adders": {
+        "x2 Increased Mass": {
+          "levels": "1",
+          "name": "",
+          "display": "x2 Increased Mass",
+          "alias": "x2 Increased Mass",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "5"
+        },
+        "Safe Aquatic Teleport": {
+          "levels": "0",
+          "name": "",
+          "display": "Safe Aquatic Teleport",
+          "alias": "Safe Aquatic Teleport",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "5"
+        }
+      },
+      "modifiers": {
+        "Safe Blind Teleport": {
+          "mod_value": "+¼",
+          "levels": "0",
+          "name": "",
+          "display": "Safe Blind Teleport",
+          "alias": "Safe Blind Teleport",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "MegaScale": {
+          "mod_value": "+2",
+          "levels": "4",
+          "name": "",
+          "display": "MegaScale",
+          "alias": "MegaScale",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Usable Simultaneously; Usable Simultaneously": {
+          "mod_value": "+1 ½",
+          "levels": "0",
+          "name": "",
+          "display": "Usable On Others",
+          "alias": "Usable Simultaneously",
+          "input": "",
+          "notes": "",
+          "option": "Usable Simultaneously",
+          "sfx": "Default"
+        },
+        "Reduced Endurance; Half END": {
+          "mod_value": "+¼",
+          "levels": "0",
+          "name": "",
+          "display": "Reduced Endurance",
+          "alias": "Reduced Endurance",
+          "input": "",
+          "notes": "",
+          "option": "Half END",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Extra-Dimensional Movement; Any Dimension, Any Location": {
+      "levels": "0",
+      "name": "",
+      "display": "Extra-Dimensional Movement",
+      "alias": "Extra-Dimensional Movement",
+      "input": "",
+      "notes": "",
+      "option": "Any Dimension, Any Location",
+      "sfx": "Cosmic Energy",
+      "range": "",
+      "damage": "",
+      "end": "11",
+      "real_cost": "0",
+      "active_cost": "245",
+      "adders": {
+        "x32 Increased Weight": {
+          "levels": "5",
+          "name": "",
+          "display": "x32 Increased Weight",
+          "alias": "x32 Increased Weight",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "25"
+        }
+      },
+      "modifiers": {
+        "Safe Blind Travel": {
+          "mod_value": "+¼",
+          "levels": "0",
+          "name": "",
+          "display": "Safe Blind Travel",
+          "alias": "Safe Blind Travel",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Reduced Endurance; Half END": {
+          "mod_value": "+¼",
+          "levels": "0",
+          "name": "",
+          "display": "Reduced Endurance",
+          "alias": "Reduced Endurance",
+          "input": "",
+          "notes": "",
+          "option": "Half END",
+          "sfx": "Default"
+        },
+        "Difficult To Dispel": {
+          "mod_value": "+½",
+          "levels": "2",
+          "name": "",
+          "display": "Difficult To Dispel",
+          "alias": "Difficult To Dispel",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Usable Simultaneously; Usable Simultaneously": {
+          "mod_value": "+1 ½",
+          "levels": "0",
+          "name": "",
+          "display": "Usable On Others",
+          "alias": "Usable Simultaneously",
+          "input": "",
+          "notes": "",
+          "option": "Usable Simultaneously",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Masterful Illusions: Images; Sight Group": {
+      "levels": "0",
+      "name": "Masterful Illusions",
+      "display": "Images",
+      "alias": "Images",
+      "input": "",
+      "notes": "",
+      "option": "Sight Group",
+      "sfx": "Default",
+      "range": "410m",
+      "damage": "",
+      "end": "26",
+      "real_cost": "0",
+      "active_cost": "266",
+      "adders": {
+        "Touch Group": {
+          "levels": "0",
+          "name": "",
+          "display": "",
+          "alias": "Touch Group",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "5"
+        },
+        "Mental Group": {
+          "levels": "0",
+          "name": "",
+          "display": "",
+          "alias": "Mental Group",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "5"
+        },
+        "Smell/Taste Group": {
+          "levels": "0",
+          "name": "",
+          "display": "",
+          "alias": "Smell/Taste Group",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "5"
+        },
+        "Danger Sense": {
+          "levels": "0",
+          "name": "",
+          "display": "",
+          "alias": "Danger Sense",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "3"
+        },
+        "Combat Sense": {
+          "levels": "0",
+          "name": "",
+          "display": "",
+          "alias": "Combat Sense",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "5"
+        },
+        "Detect": {
+          "levels": "0",
+          "name": "",
+          "display": "",
+          "alias": "Detect",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "3"
+        },
+        "Spatial Awareness": {
+          "levels": "0",
+          "name": "",
+          "display": "",
+          "alias": "Spatial Awareness",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "5"
+        }
+      },
+      "modifiers": {
+        "Area Of Effect; Radius": {
+          "mod_value": "+1 ¼",
+          "levels": "32",
+          "name": "",
+          "display": "Area Of Effect",
+          "alias": "Area Of Effect",
+          "input": "",
+          "notes": "",
+          "option": "Radius",
+          "sfx": "Default"
+        },
+        "MegaScale": {
+          "mod_value": "+1",
+          "levels": "0",
+          "name": "",
+          "display": "MegaScale",
+          "alias": "MegaScale",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Uncontrolled": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Uncontrolled",
+          "alias": "Uncontrolled",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Costs Endurance Only To Activate": {
+          "mod_value": "+¼",
+          "levels": "0",
+          "name": "",
+          "display": "Costs Endurance Only To Activate",
+          "alias": "Costs Endurance Only To Activate",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Time Limit; 1 Season": {
+          "mod_value": "+2 ½",
+          "levels": "0",
+          "name": "",
+          "display": "Time Limit",
+          "alias": "Time Limit",
+          "input": "",
+          "notes": "",
+          "option": "1 Season",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Telepathy: Human": {
+      "levels": "10",
+      "name": "",
+      "display": "Telepathy",
+      "alias": "Telepathy",
+      "input": "Human",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "LOS",
+      "damage": "10d6",
+      "end": "0",
+      "real_cost": "0",
+      "active_cost": "112",
+      "adders": {
+      },
+      "modifiers": {
+        "Cumulative": {
+          "mod_value": "+¾",
+          "levels": "1",
+          "name": "",
+          "display": "Cumulative",
+          "alias": "Cumulative",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Reduced Endurance; 0 END": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Reduced Endurance",
+          "alias": "Reduced Endurance",
+          "input": "",
+          "notes": "",
+          "option": "0 END",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Mind Scan: Human": {
+      "levels": "10",
+      "name": "",
+      "display": "Mind Scan",
+      "alias": "Mind Scan",
+      "input": "Human",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "range": "",
+      "damage": "10d6",
+      "end": "0",
+      "real_cost": "0",
+      "active_cost": "112",
+      "adders": {
+      },
+      "modifiers": {
+        "Cumulative": {
+          "mod_value": "+¾",
+          "levels": "1",
+          "name": "",
+          "display": "Cumulative",
+          "alias": "Cumulative",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Reduced Endurance; 0 END": {
+          "mod_value": "+½",
+          "levels": "0",
+          "name": "",
+          "display": "Reduced Endurance",
+          "alias": "Reduced Endurance",
+          "input": "",
+          "notes": "",
+          "option": "0 END",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Mind Link: Animal; Any Willing Target": {
+      "levels": "0",
+      "name": "",
+      "display": "Mind Link",
+      "alias": "Mind Link",
+      "input": "Animal",
+      "notes": "",
+      "option": "Any Willing Target",
+      "sfx": "Default",
+      "range": "LOS",
+      "damage": "",
+      "end": "0",
+      "real_cost": "0",
+      "active_cost": "90",
+      "adders": {
+        "Number of Minds (x4)": {
+          "levels": "2",
+          "name": "",
+          "display": "Number of Minds (x4)",
+          "alias": "Number of Minds (x4)",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "10"
+        },
+        "Unlimited range in this dimension and can reach into other dimensions": {
+          "levels": "0",
+          "name": "",
+          "display": "Unlimited range in this dimension and can reach into other dimensions",
+          "alias": "Unlimited range in this dimension and can reach into other dimensions",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "10"
+        },
+        "No LOS Needed": {
+          "levels": "0",
+          "name": "",
+          "display": "No LOS Needed",
+          "alias": "No LOS Needed",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "10"
+        }
+      },
+      "modifiers": {
+        "Transdimensional; Any Dimension": {
+          "mod_value": "+1",
+          "levels": "0",
+          "name": "",
+          "display": "Transdimensional",
+          "alias": "Transdimensional",
+          "input": "",
+          "notes": "",
+          "option": "Any Dimension",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Physical Transmogrification: Transform: Any to Any; Severe": {
+      "levels": "8",
+      "name": "Physical Transmogrification",
+      "display": "Transform",
+      "alias": "Transform",
+      "input": "Any to Any",
+      "notes": "",
+      "option": "Severe",
+      "sfx": "Default",
+      "range": "1,200m",
+      "damage": "8d6",
+      "end": "13",
+      "real_cost": "0",
+      "active_cost": "300",
+      "adders": {
+        "Healed back by; ": {
+          "levels": "0",
+          "name": "",
+          "display": "Healed back by",
+          "alias": "Healed back by",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "0"
+        }
+      },
+      "modifiers": {
+        "Improved Results Group": {
+          "mod_value": "+1",
+          "levels": "0",
+          "name": "",
+          "display": "Improved Results Group",
+          "alias": "Improved Results Group",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Variable Healing Method": {
+          "mod_value": "+¼",
+          "levels": "0",
+          "name": "",
+          "display": "Variable Healing Method",
+          "alias": "Variable Healing Method",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Reduced Endurance; Half END": {
+          "mod_value": "+¼",
+          "levels": "0",
+          "name": "",
+          "display": "Reduced Endurance",
+          "alias": "Reduced Endurance",
+          "input": "",
+          "notes": "",
+          "option": "Half END",
+          "sfx": "Default"
+        }
+      }
+    },
+    "Mental Transmogrification: Transform: Any to Any; Severe": {
+      "levels": "6",
+      "name": "Mental Transmogrification",
+      "display": "Transform",
+      "alias": "Transform",
+      "input": "Any to Any",
+      "notes": "",
+      "option": "Severe",
+      "sfx": "Default",
+      "range": "1,000m",
+      "damage": "6 ½d6",
+      "end": "13",
+      "real_cost": "0",
+      "active_cost": "300",
+      "adders": {
+        "Healed back by; ": {
+          "levels": "0",
+          "name": "",
+          "display": "Healed back by",
+          "alias": "Healed back by",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "0"
+        },
+        "+½ d6": {
+          "levels": "0",
+          "name": "",
+          "display": "+½ d6",
+          "alias": "+½ d6",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default",
+          "cost": "10"
+        }
+      },
+      "modifiers": {
+        "Improved Results Group": {
+          "mod_value": "+1",
+          "levels": "0",
+          "name": "",
+          "display": "Improved Results Group",
+          "alias": "Improved Results Group",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Variable Healing Method": {
+          "mod_value": "+¼",
+          "levels": "0",
+          "name": "",
+          "display": "Variable Healing Method",
+          "alias": "Variable Healing Method",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        },
+        "Reduced Endurance; Half END": {
+          "mod_value": "+¼",
+          "levels": "0",
+          "name": "",
+          "display": "Reduced Endurance",
+          "alias": "Reduced Endurance",
+          "input": "",
+          "notes": "",
+          "option": "Half END",
+          "sfx": "Default"
+        },
+        "Attack Versus Alternate Defense: Mental Defense; Very Common -> Very Common": {
+          "mod_value": "+0",
+          "levels": "0",
+          "name": "",
+          "display": "Attack Versus Alternate Defense",
+          "alias": "Attack Versus Alternate Defense",
+          "input": "Mental Defense",
+          "notes": "",
+          "option": "Very Common -> Very Common",
+          "sfx": "Default"
+        },
+        "Alternate Combat Value; uses OMCV against DMCV": {
+          "mod_value": "+¼",
+          "levels": "0",
+          "name": "",
+          "display": "Alternate Combat Value",
+          "alias": "Alternate Combat Value",
+          "input": "",
+          "notes": "",
+          "option": "uses OMCV against DMCV",
+          "sfx": "Default"
+        },
+        "Works on EGO, not BODY": {
+          "mod_value": "+¼",
+          "levels": "0",
+          "name": "",
+          "display": "Works on EGO, not BODY",
+          "alias": "Works on EGO, not BODY",
+          "input": "",
+          "notes": "",
+          "option": "",
+          "sfx": "Default"
+        }
+      }
+    }
+  },
+  "compound_powers": {
+    "Djinn Form Damage Reduction: Compound Power": {
+      "Damage Reduction: Physical; Damage Reduction, Resistant, 50%": {
+        "levels": "0",
+        "name": "",
+        "display": "Damage Reduction",
+        "alias": "Damage Reduction",
+        "input": "Physical",
+        "notes": "",
+        "option": "Damage Reduction, Resistant, 50%",
+        "sfx": "Default",
+        "range": "",
+        "damage": "0d6",
+        "end": "0",
+        "real_cost": "30",
+        "active_cost": "30",
+        "adders": {
+        },
+        "modifiers": {
+        }
+      },
+      "Damage Reduction: Energy; Damage Reduction, Resistant, 50%": {
+        "levels": "0",
+        "name": "",
+        "display": "Damage Reduction",
+        "alias": "Damage Reduction",
+        "input": "Energy",
+        "notes": "",
+        "option": "Damage Reduction, Resistant, 50%",
+        "sfx": "Default",
+        "range": "",
+        "damage": "0d6",
+        "end": "0",
+        "real_cost": "30",
+        "active_cost": "30",
+        "adders": {
+        },
+        "modifiers": {
+        }
+      }
+    },
+    "The Big Compound Power: Compound Power": {
+      "Blast: PD": {
+        "levels": "5",
+        "name": "",
+        "display": "Blast",
+        "alias": "Blast",
+        "input": "PD",
+        "notes": "",
+        "option": "",
+        "sfx": "Default",
+        "range": "250m",
+        "damage": "5d6",
+        "end": "5",
+        "real_cost": "50",
+        "active_cost": "50",
+        "adders": {
+        },
+        "modifiers": {
+          "Area Of Effect; Radius": {
+            "mod_value": "+¾",
+            "levels": "10",
+            "name": "",
+            "display": "Area Of Effect",
+            "alias": "Area Of Effect",
+            "input": "",
+            "notes": "",
+            "option": "Radius",
+            "sfx": "Default"
+          },
+          "Armor Piercing": {
+            "mod_value": "+¼",
+            "levels": "1",
+            "name": "",
+            "display": "Armor Piercing",
+            "alias": "Armor Piercing",
+            "input": "",
+            "notes": "",
+            "option": "",
+            "sfx": "Default"
+          }
+        }
+      },
+      "Flash; Sight Group": {
+        "levels": "10",
+        "name": "",
+        "display": "Flash",
+        "alias": "Flash",
+        "input": "",
+        "notes": "",
+        "option": "Sight Group",
+        "sfx": "Default",
+        "range": "550m",
+        "damage": "10d6",
+        "end": "11",
+        "real_cost": "110",
+        "active_cost": "110",
+        "adders": {
+          "Hearing Group": {
+            "levels": "0",
+            "name": "",
+            "display": "",
+            "alias": "Hearing Group",
+            "input": "",
+            "notes": "",
+            "option": "",
+            "sfx": "Default",
+            "cost": "5"
+          }
+        },
+        "modifiers": {
+          "Armor Piercing": {
+            "mod_value": "+¼",
+            "levels": "1",
+            "name": "",
+            "display": "Armor Piercing",
+            "alias": "Armor Piercing",
+            "input": "",
+            "notes": "",
+            "option": "",
+            "sfx": "Default"
+          },
+          "Area Of Effect; Radius": {
+            "mod_value": "+¾",
+            "levels": "10",
+            "name": "",
+            "display": "Area Of Effect",
+            "alias": "Area Of Effect",
+            "input": "",
+            "notes": "",
+            "option": "Radius",
+            "sfx": "Default"
+          }
+        }
+      }
+    }
+  },
+  "equipments": {
+    "Grappling Hook Gun: Swinging": {
+      "levels": "10",
+      "name": "Grappling Hook Gun",
+      "display": "Swinging",
+      "alias": "Swinging",
+      "input": "",
+      "notes": "",
+      "option": "",
+      "sfx": "Default",
+      "stats": {
+        "range": "",
+        "damage": "10m",
+        "weight": "2.00lbs",
+        "end": "1",
+        "value": "$500"
+      },
+      "real_cost": "5",
+      "active_cost": "5",
+      "adders": {
+      },
+      "modifiers": {
+      }
+    },
+    "Multi-Skill Skill Kit II - Very Good Kit: Skill Levels; with all Intellect Skills, all Interaction Skills, or a similar broad group": {
+      "levels": "4",
+      "name": "Multi-Skill Skill Kit II - Very Good Kit",
+      "display": "Skill Levels",
+      "alias": "Skill Levels",
+      "input": "",
+      "notes": "",
+      "option": "with all Intellect Skills, all Interaction Skills, or a similar broad group",
+      "sfx": "Default",
+      "stats": {
+        "range": "",
+        "damage": "",
+        "weight": "2.00lbs",
+        "end": "",
+        "value": "$25"
+      },
+      "real_cost": "8",
+      "active_cost": "16",
+      "adders": {
+      },
+      "modifiers": {
+        "Multi-Skill Skill Kit II - Very Good Kit: Focus; OAF": {
+          "mod_value": "-1",
+          "levels": "0",
+          "name": "Multi-Skill Skill Kit II - Very Good Kit",
+          "display": "Focus",
+          "input": "",
+          "alias": "Focus",
+          "notes": "",
+          "option": "OAF",
+          "sfx": "Default"
+        }
+      }
+    }
+  },
+  "compound_equipments": {
+    "Hammer, War: Compound Power": {
+      "Killing Attack - Hand-To-Hand: PD": {
+        "levels": "1",
+        "name": "",
+        "display": "Killing Attack - Hand-To-Hand",
+        "alias": "Killing Attack - Hand-To-Hand",
+        "input": "PD",
+        "notes": "",
+        "option": "",
+        "sfx": "Default",
+        "real_cost": "10",
+        "active_cost": "35",
+        "range": "",
+        "damage": "1d6+1 (2 ½d6 w/STR)",
+        "adders": {
+          "+1 pip": {
+            "levels": "0",
+            "name": "",
+            "display": "+1 pip",
+            "alias": "+1 pip",
+            "input": "",
+            "notes": "",
+            "option": "",
+            "sfx": "Default",
+            "cost": "5"
+          }
+        },
+        "modifiers": {
+          "+1 Increased STUN Multiplier": {
+            "mod_value": "+¼",
+            "levels": "1",
+            "name": "",
+            "display": "+1 Increased STUN Multiplier",
+            "input": "",
+            "alias": "+1 Increased STUN Multiplier",
+            "notes": "",
+            "option": "",
+            "sfx": "Default"
+          },
+          "Focus; OAF": {
+            "mod_value": "-1",
+            "levels": "0",
+            "name": "",
+            "display": "Focus",
+            "input": "",
+            "alias": "Focus",
+            "notes": "",
+            "option": "OAF",
+            "sfx": "Default"
+          },
+          "STR Min:  13": {
+            "mod_value": "-½",
+            "levels": "0",
+            "name": "",
+            "display": "STR Min:  13",
+            "input": "",
+            "alias": "STR Min:  13",
+            "notes": "",
+            "option": "",
+            "sfx": "Default"
+          },
+          "Reduced Endurance; 0 END": {
+            "mod_value": "+½",
+            "levels": "0",
+            "name": "",
+            "display": "Reduced Endurance",
+            "input": "",
+            "alias": "Reduced Endurance",
+            "notes": "",
+            "option": "0 END",
+            "sfx": "Default"
+          },
+          "Real Weapon": {
+            "mod_value": "-¼",
+            "levels": "0",
+            "name": "",
+            "display": "Real Weapon",
+            "input": "",
+            "alias": "Real Weapon",
+            "notes": "",
+            "option": "",
+            "sfx": "Default"
+          },
+          "Required Hands; One-And-A-Half-Handed": {
+            "mod_value": "-¼",
+            "levels": "0",
+            "name": "",
+            "display": "Required Hands",
+            "input": "",
+            "alias": "Required Hands",
+            "notes": "",
+            "option": "One-And-A-Half-Handed",
+            "sfx": "Default"
+          },
+          "Side Effects (-1 OCV); Minor Side Effect": {
+            "mod_value": "-½",
+            "levels": "0",
+            "name": "",
+            "display": "Side Effects",
+            "input": "",
+            "alias": "Side Effects (-1 OCV)",
+            "notes": "",
+            "option": "Minor Side Effect",
+            "sfx": "Default"
+          }
+        }
+      },
+      "Medium (1m) Reach: Custom Power": {
+        "levels": "1",
+        "name": "Medium (1m) Reach",
+        "display": "Custom Power",
+        "alias": "",
+        "input": "",
+        "notes": "",
+        "option": "",
+        "sfx": "Default",
+        "real_cost": "1",
+        "active_cost": "1",
+        "range": "",
+        "damage": "",
+        "adders": {
+        },
+        "modifiers": {
+        }
+      },
+      "stats": {
+        "range": "",
+        "damage": "",
+        "weight": "4.41lbs",
+        "end": "0",
+        "value": "$300"
+      }
+    },
+    "Crossbow, Light: Compound Power": {
+      "Killing Attack - Ranged: PD": {
+        "levels": "1",
+        "name": "",
+        "display": "Killing Attack - Ranged",
+        "alias": "Killing Attack - Ranged",
+        "input": "PD",
+        "notes": "",
+        "option": "",
+        "sfx": "Default",
+        "real_cost": "5",
+        "active_cost": "25",
+        "range": "200m",
+        "damage": "1d6+1",
+        "adders": {
+          "+1 pip": {
+            "levels": "0",
+            "name": "",
+            "display": "+1 pip",
+            "alias": "+1 pip",
+            "input": "",
+            "notes": "",
+            "option": "",
+            "sfx": "Default",
+            "cost": "5"
+          }
+        },
+        "modifiers": {
+          "Charges; 12": {
+            "mod_value": "+¼",
+            "levels": "0",
+            "name": "",
+            "display": "Charges",
+            "input": "",
+            "alias": "Charges",
+            "notes": "",
+            "option": "12",
+            "sfx": "Default"
+          },
+          "Beam": {
+            "mod_value": "-¼",
+            "levels": "0",
+            "name": "",
+            "display": "Beam",
+            "input": "",
+            "alias": "Beam",
+            "notes": "",
+            "option": "",
+            "sfx": "Default"
+          },
+          "Concentration; ½ DCV": {
+            "mod_value": "-½",
+            "levels": "0",
+            "name": "",
+            "display": "Concentration",
+            "input": "",
+            "alias": "Concentration",
+            "notes": "",
+            "option": "½ DCV",
+            "sfx": "Default"
+          },
+          "Focus; OAF": {
+            "mod_value": "-1",
+            "levels": "0",
+            "name": "",
+            "display": "Focus",
+            "input": "",
+            "alias": "Focus",
+            "notes": "",
+            "option": "OAF",
+            "sfx": "Default"
+          },
+          "Real Weapon": {
+            "mod_value": "-¼",
+            "levels": "0",
+            "name": "",
+            "display": "Real Weapon",
+            "input": "",
+            "alias": "Real Weapon",
+            "notes": "",
+            "option": "",
+            "sfx": "Default"
+          },
+          "Required Hands; Two-Handed": {
+            "mod_value": "-½",
+            "levels": "0",
+            "name": "",
+            "display": "Required Hands",
+            "input": "",
+            "alias": "Required Hands",
+            "notes": "",
+            "option": "Two-Handed",
+            "sfx": "Default"
+          },
+          "Extra Time; Extra Phase": {
+            "mod_value": "-¾",
+            "levels": "0",
+            "name": "",
+            "display": "Extra Time",
+            "input": "",
+            "alias": "Extra Time",
+            "notes": "",
+            "option": "Extra Phase",
+            "sfx": "Default"
+          },
+          "STR Minimum; 9-13": {
+            "mod_value": "-1",
+            "levels": "0",
+            "name": "",
+            "display": "STR Minimum",
+            "input": "",
+            "alias": "STR Minimum",
+            "notes": "",
+            "option": "9-13",
+            "sfx": "Default"
+          }
+        }
+      },
+      "Penalty Skill Levels: Range Modifier; to offset a specific negative OCV modifier with any single attack": {
+        "levels": "1",
+        "name": "",
+        "display": "Penalty Skill Levels",
+        "alias": "Penalty Skill Levels",
+        "input": "Range Modifier",
+        "notes": "",
+        "option": "to offset a specific negative OCV modifier with any single attack",
+        "sfx": "Default",
+        "real_cost": "1",
+        "active_cost": "1",
+        "range": "",
+        "damage": "",
+        "adders": {
+        },
+        "modifiers": {
+          "Focus; OAF": {
+            "mod_value": "-1",
+            "levels": "0",
+            "name": "",
+            "display": "Focus",
+            "input": "",
+            "alias": "Focus",
+            "notes": "",
+            "option": "OAF",
+            "sfx": "Default"
+          },
+          "Required Hands; Two-Handed": {
+            "mod_value": "-½",
+            "levels": "0",
+            "name": "",
+            "display": "Required Hands",
+            "input": "",
+            "alias": "Required Hands",
+            "notes": "",
+            "option": "Two-Handed",
+            "sfx": "Default"
+          }
+        }
+      },
+      "stats": {
+        "range": "",
+        "damage": "",
+        "weight": "3.53lbs",
+        "end": "[10 rc]",
+        "value": "$200"
+      }
+    },
+    "Scimitar/Tulwar: Compound Power": {
+      "Killing Attack - Hand-To-Hand: PD": {
+        "levels": "1",
+        "name": "",
+        "display": "Killing Attack - Hand-To-Hand",
+        "alias": "Killing Attack - Hand-To-Hand",
+        "input": "PD",
+        "notes": "",
+        "option": "",
+        "sfx": "Default",
+        "real_cost": "11",
+        "active_cost": "30",
+        "range": "",
+        "damage": "1d6+1 (2d6+1 w/STR)",
+        "adders": {
+          "+1 pip": {
+            "levels": "0",
+            "name": "",
+            "display": "+1 pip",
+            "alias": "+1 pip",
+            "input": "",
+            "notes": "",
+            "option": "",
+            "sfx": "Default",
+            "cost": "5"
+          }
+        },
+        "modifiers": {
+          "Focus; OAF": {
+            "mod_value": "-1",
+            "levels": "0",
+            "name": "",
+            "display": "Focus",
+            "input": "",
+            "alias": "Focus",
+            "notes": "",
+            "option": "OAF",
+            "sfx": "Default"
+          },
+          "Real Weapon": {
+            "mod_value": "-¼",
+            "levels": "0",
+            "name": "",
+            "display": "Real Weapon",
+            "input": "",
+            "alias": "Real Weapon",
+            "notes": "",
+            "option": "",
+            "sfx": "Default"
+          },
+          "Reduced Endurance; 0 END": {
+            "mod_value": "+½",
+            "levels": "0",
+            "name": "",
+            "display": "Reduced Endurance",
+            "input": "",
+            "alias": "Reduced Endurance",
+            "notes": "",
+            "option": "0 END",
+            "sfx": "Default"
+          },
+          "STR Minimum; 9-13": {
+            "mod_value": "-½",
+            "levels": "0",
+            "name": "",
+            "display": "STR Minimum",
+            "input": "",
+            "alias": "STR Minimum",
+            "notes": "",
+            "option": "9-13",
+            "sfx": "Default"
+          }
+        }
+      },
+      "Medium (1m) Reach: Custom Power": {
+        "levels": "1",
+        "name": "Medium (1m) Reach",
+        "display": "Custom Power",
+        "alias": "",
+        "input": "",
+        "notes": "",
+        "option": "",
+        "sfx": "Default",
+        "real_cost": "1",
+        "active_cost": "1",
+        "range": "",
+        "damage": "",
+        "adders": {
+        },
+        "modifiers": {
+        }
+      },
+      "stats": {
+        "range": "",
+        "damage": "",
+        "weight": "2.43lbs",
+        "end": "0",
+        "value": "$150"
+      }
+    }
+  },
+  "points": {
+    "base": "1000",
+    "comp_points_required": "100",
+    "characteristics": "351",
+    "powers": "2895",
+    "martial_arts": "31",
+    "skills": "178",
+    "perks": "0",
+    "talents": "39",
+    "experienced_earned": "2500",
+    "experience_unspent": "6",
+    "experience_spent": "2494",
+    "total": "3494"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

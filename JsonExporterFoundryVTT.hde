@@ -1,15 +1,15 @@
-<!--TEMPLATE_NAME-->6e JSON export for foundryVTT<!--/TEMPLATE_NAME--><!--TEMPLATE_DESCRIPTION--><p>6e JSON exporter for foundryVTT - (from Brenell's awesome work!)r</p><p>Version 1.0  DEC 2020</p><p>JSON Data dump for ingestion into FoundryVTT</p><!--/TEMPLATE_DESCRIPTION--><!--FILE_EXTENSION-->json<!--/FILE_EXTENSION-->
+<!--TEMPLATE_NAME-->6e JSON export for foundryVTT<!--/TEMPLATE_NAME--><!--TEMPLATE_DESCRIPTION--><p>6e JSON exporter
+    for foundryVTT - (from Brenell's awesome work!)r</p><p>Version 1.1  DEC 2020</p><p>JSON Data dump for ingestion into FoundryVTT</p><!--/TEMPLATE_DESCRIPTION--><!--FILE_EXTENSION-->json<!--/FILE_EXTENSION-->
         {
         "export_info": {
         "appversion": "<!--APP_VERSION-->",
         "exportid": "<!--EXPORT_ID-->",
-        "name": "<!--CHARACTER_NAME-->",
-        "playername": "<!--PLAYER_NAME-->",
-        "version": 3.0,
+        "version": 1.0,
         "edition": 6
         },
         "description": {
         "name": "<!--CHARACTER_NAME-->",
+        "playername": "<!--PLAYER_NAME-->",
         "height_metric": "<!--HEIGHT_METRIC-->",
         "height_imperial": "<!--HEIGHT_ENGLISH-->",
         "weight_metric": "<!--WEIGHT_METRIC-->",
@@ -49,7 +49,6 @@
         "roll": "<!--SECONDARY_ROLL-->-"
         },
         "cost": "<!--STR_COST-->",
-        "roll": "<!--STR_ROLL-->",
         "damage": "<!--STR_DICE-->",
         "lift_kg": "<!--STR_LIFT-->",
         "end_cost": "<!--STR_END-->",
@@ -233,7 +232,9 @@
         "text": "<!--TEXT-->",
         "notes": "<!--NOTES-->"
         <!--/LIGHTNING_REFLEXES-->
+        }
         },
+        "defense": {
         "physical_defense": {
         <!--PD-->
         "shortname": "PD",
@@ -268,6 +269,116 @@
         "cost": "",
         "notes": ""
         }
+        },
+        "defense_powers": {
+        <!--IFPOWERS--><!--POWERS--><!--IS_NOT_SEPARATOR-->
+        <!--IF_DEFENSE--><!--IF_NOT_COMPOUND_POWER-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--IS_NOT_LIST--><!--DISPLAY--><!--/IS_NOT_LIST--><!--IS_LIST--><!--ALIAS--><!--/IS_LIST--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        <!--IS_MP-->
+        "is_mpp": true,
+        <!--/IS_MP-->
+        <!--IS_VPP-->
+        "is_vpp": true,
+        <!--/IS_VPP-->
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "alias": "<!--ALIAS-->",
+        "input": "<!--INPUT-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "sfx": "<!--SFX-->",
+        "range": "<!--POWER_RANGE-->",
+        "damage": "<!--POWER_DMG-->",
+        "end": "<!--POWER_END-->",
+        "real_cost": "<!--COST-->",
+        "active_cost": "<!--ACTIVE_COST-->",
+        "adders": {
+        <!--ADDERS-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--ALIAS--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "alias": "<!--ALIAS-->",
+        "input": "<!--INPUT-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "sfx": "<!--SFX-->",
+        "cost": "<!--COST-->"
+        },
+        <!--/ADDERS-->
+        },
+        "modifiers": {
+        <!--MODIFIERS-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--ALIAS--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        "mod_value": "<!--MODIFIER_VALUE-->",
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "alias": "<!--ALIAS-->",
+        "input": "<!--INPUT-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "sfx": "<!--SFX-->"
+        },
+        <!--/MODIFIERS-->
+        }
+        },
+        <!--/IF_NOT_COMPOUND_POWER--><!--/IF_DEFENSE--><!--/IS_NOT_SEPARATOR--><!--/POWERS--><!--/IFPOWERS-->
+        },
+        "defense_compound_powers": {
+        <!--IFPOWERS--><!--POWERS--><!--IS_NOT_SEPARATOR-->
+        <!--IF_DEFENSE--><!--IF_COMPOUND_POWER-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--DISPLAY--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        <!--COMPONENT_POWERS-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--DISPLAY--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "alias": "<!--ALIAS-->",
+        "input": "<!--INPUT-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "sfx": "<!--SFX-->",
+        "range": "<!--POWER_RANGE-->",
+        "damage": "<!--POWER_DMG-->",
+        "end": "<!--POWER_END-->",
+        "real_cost": "<!--COST-->",
+        "active_cost": "<!--ACTIVE_COST-->",
+        "adders": {
+        <!--ADDERS-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--ALIAS--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "alias": "<!--ALIAS-->",
+        "input": "<!--INPUT-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "sfx": "<!--SFX-->",
+        "cost": "<!--COST-->"
+        },
+        <!--/ADDERS-->
+        },
+        "modifiers": {
+        <!--MODIFIERS-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--ALIAS--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        "mod_value": "<!--MODIFIER_VALUE-->",
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "alias": "<!--ALIAS-->",
+        "input": "<!--INPUT-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "sfx": "<!--SFX-->"
+        },
+        <!--/MODIFIERS-->
+        }
+        },
+        <!--/COMPONENT_POWERS-->
+        },
+        <!--/IF_COMPOUND_POWER--><!--/IF_DEFENSE--><!--/IS_NOT_SEPARATOR--><!--/POWERS--><!--/IFPOWERS-->
         },
         "martial_arts": {
         <!--MARTIAL_ARTS--><!--IF_MANEUVER-->
@@ -363,7 +474,7 @@
         <!--/LEAPING-->
         }
         },
-        "movement_other": {
+        "movement_others": {
         <!--POWERS--><!--IF_MOVEMENT-->
         "<!--DISPLAY-->": {
         "combat": {
@@ -537,7 +648,10 @@
         <!--/MODIFIERS-->
         }
         },
-        <!--/IF_NOT_COMPOUND_POWER-->
+        <!--/IF_NOT_COMPOUND_POWER--><!--/IS_NOT_SEPARATOR--><!--/POWERS--><!--/IFPOWERS-->
+        },
+        "compound_powers": {
+        <!--IFPOWERS--><!--POWERS--><!--IS_NOT_SEPARATOR-->
         <!--IF_COMPOUND_POWER-->
         "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--DISPLAY--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
         <!--COMPONENT_POWERS-->
@@ -590,9 +704,8 @@
         },
         <!--/IF_COMPOUND_POWER--><!--/IS_NOT_SEPARATOR--><!--/POWERS--><!--/IFPOWERS-->
         },
-        "equipment": {
-        <!--IFEQUIPMENT--><!--EQUIPMENT-->
-        <!--IS_NOT_SEPARATOR-->
+        "equipments": {
+        <!--IFEQUIPMENT--><!--EQUIPMENT--><!--IF_NOT_COMPOUND_POWER--><!--IS_NOT_SEPARATOR-->
         "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--DISPLAY--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
         "levels": "<!--LEVELS-->",
         "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
@@ -642,7 +755,67 @@
         <!--/MODIFIERS-->
         }
         },
-        <!--/IS_NOT_SEPARATOR--><!--/EQUIPMENT--><!--/IFEQUIPMENT-->
+        <!--/IS_NOT_SEPARATOR--><!--/IF_NOT_COMPOUND_POWER--><!--/EQUIPMENT--><!--/IFEQUIPMENT-->
+        },
+        "compound_equipments": {
+        <!--IFEQUIPMENT--><!--EQUIPMENT-->
+        <!--IF_COMPOUND_POWER--><!--IS_NOT_SEPARATOR-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--DISPLAY--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        <!--COMPONENT_POWERS-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--DISPLAY--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "alias": "<!--ALIAS-->",
+        "input": "<!--INPUT-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "sfx": "<!--SFX-->",
+        "real_cost": "<!--COST-->",
+        "active_cost": "<!--ACTIVE_COST-->",
+        "range": "<!--POWER_RANGE-->",
+        "damage": "<!--POWER_DMG-->",
+        "adders": {
+        <!--ADDERS-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--ALIAS--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "alias": "<!--ALIAS-->",
+        "input": "<!--INPUT-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "sfx": "<!--SFX-->",
+        "cost": "<!--COST-->"
+        },
+        <!--/ADDERS-->
+        },
+        "modifiers": {
+        <!--MODIFIERS-->
+        "<!--IFNAME--><!--NAME-->: <!--/IFNAME--><!--ALIAS--><!--IF_INPUT-->: <!--INPUT--><!--/IF_INPUT--><!--IF_OPTION-->; <!--OPTION--><!--/IF_OPTION-->": {
+        "mod_value": "<!--MODIFIER_VALUE-->",
+        "levels": "<!--LEVELS-->",
+        "name": "<!--IFNAME--><!--NAME--><!--/IFNAME-->",
+        "display": "<!--DISPLAY-->",
+        "input": "<!--INPUT-->",
+        "alias": "<!--ALIAS-->",
+        "notes": "<!--NOTES-->",
+        "option": "<!--OPTION-->",
+        "sfx": "<!--SFX-->"
+        },
+        <!--/MODIFIERS-->
+        }
+        },
+        <!--/COMPONENT_POWERS-->
+        "stats": {
+        "range": "<!--EQUIPMENT_RANGE-->",
+        "damage": "<!--EQUIPMENT_DMG-->",
+        "weight": "<!--EQUIPMENT_WEIGHT-->",
+        "end": "<!--EQUIPMENT_END-->",
+        "value": "<!--EQUIPMENT_VALUE-->"
+        }
+        },
+        <!--/IS_NOT_SEPARATOR--><!--/IF_COMPOUND_POWER--><!--/EQUIPMENT--><!--/IFEQUIPMENT-->
         },
         "points": {
         "base": "<!--BASE_POINTS-->",
@@ -659,7 +832,6 @@
         "total": "<!--TOTAL_POINTS-->"
         }
         }
-
 <!--REG_REPLACE--><!--REGSTRING-->3/4<!--/REGSTRING--><!--REPSTRING-->¾<!--/REPSTRING--><!--/REG_REPLACE-->
 <!--REG_REPLACE--><!--REGSTRING-->1/2<!--/REGSTRING--><!--REPSTRING-->½<!--/REPSTRING--><!--/REG_REPLACE-->
 <!--REG_REPLACE--><!--REGSTRING-->1/4<!--/REGSTRING--><!--REPSTRING-->¼<!--/REPSTRING--><!--/REG_REPLACE-->
