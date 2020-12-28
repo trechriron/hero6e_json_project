@@ -4,7 +4,7 @@
 To create a universal JSON export file for Hero Designer to be used across multiple tools.
 
 ## Guidelines
-1. Try to make it has "readable" as possible.
+1. Try to make it as "readable" as possible.
 2. Use nesting to organize things like an object. A fellow dev should be able to easily find a parameter by looking at the root and following it down the tree.
 3. Multiple params are OK. HD has many fields for output. We shouldn't force any implementation to use any particular output.
 4. You will find some interesting combinations of export elements for top level and sub-level parameters. This is an attempt to create unique names (required for JSON).
